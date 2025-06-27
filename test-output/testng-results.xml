@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-27T02:16:03 GMT-07:00" name="Default suite" finished-at="2025-06-27T02:19:46 GMT-07:00" duration-ms="222699">
+    <groups>
+    </groups>
+    <test started-at="2025-06-27T02:16:03 GMT-07:00" name="Default test" finished-at="2025-06-27T02:19:46 GMT-07:00" duration-ms="222699">
+      <class name="testCases.testCases_MerchantLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:03 GMT-07:00" name="setUp" finished-at="2025-06-27T02:16:19 GMT-07:00" duration-ms="15845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validatingCorrectPage()[pri:1, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:19 GMT-07:00" name="validatingCorrectPage" finished-at="2025-06-27T02:16:24 GMT-07:00" duration-ms="4869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingCorrectPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:24 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:16:24 GMT-07:00" duration-ms="96" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:24 GMT-07:00" name="setUp" finished-at="2025-06-27T02:16:37 GMT-07:00" duration-ms="12764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="quickveeLogoDisplay()[pri:2, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:37 GMT-07:00" name="quickveeLogoDisplay" finished-at="2025-06-27T02:16:44 GMT-07:00" duration-ms="7403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quickveeLogoDisplay -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:44 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:16:44 GMT-07:00" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:44 GMT-07:00" name="setUp" finished-at="2025-06-27T02:16:53 GMT-07:00" duration-ms="8337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginValidCredential()[pri:3, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:16:53 GMT-07:00" name="loginValidCredential" finished-at="2025-06-27T02:17:02 GMT-07:00" duration-ms="9093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:17:02 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:17:02 GMT-07:00" duration-ms="81" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:17:02 GMT-07:00" name="setUp" finished-at="2025-06-27T02:17:15 GMT-07:00" duration-ms="13032" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginInValidCredential()[pri:4, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:17:15 GMT-07:00" name="loginInValidCredential" finished-at="2025-06-27T02:18:05 GMT-07:00" duration-ms="50487" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginInValidCredential -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:05 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:18:05 GMT-07:00" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:05 GMT-07:00" name="setUp" finished-at="2025-06-27T02:18:18 GMT-07:00" duration-ms="13019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidEmail()[pri:5, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:18 GMT-07:00" name="invalidEmail" finished-at="2025-06-27T02:18:29 GMT-07:00" duration-ms="10485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmail -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:29 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:18:29 GMT-07:00" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:29 GMT-07:00" name="setUp" finished-at="2025-06-27T02:18:37 GMT-07:00" duration-ms="7902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidPassword()[pri:6, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:37 GMT-07:00" name="invalidPassword" finished-at="2025-06-27T02:18:47 GMT-07:00" duration-ms="9634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:47 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:18:47 GMT-07:00" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:47 GMT-07:00" name="setUp" finished-at="2025-06-27T02:18:56 GMT-07:00" duration-ms="9127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidStorename()[pri:7, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:18:56 GMT-07:00" name="invalidStorename" finished-at="2025-06-27T02:19:07 GMT-07:00" duration-ms="11008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidStorename -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:07 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:19:07 GMT-07:00" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:07 GMT-07:00" name="setUp" finished-at="2025-06-27T02:19:13 GMT-07:00" duration-ms="6285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidStorenamePassword()[pri:8, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:13 GMT-07:00" name="invalidStorenamePassword" finished-at="2025-06-27T02:19:22 GMT-07:00" duration-ms="8648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidStorenamePassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:22 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:19:22 GMT-07:00" duration-ms="88" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:22 GMT-07:00" name="setUp" finished-at="2025-06-27T02:19:34 GMT-07:00" duration-ms="11973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="InvalidEmailPassword()[pri:9, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:34 GMT-07:00" name="InvalidEmailPassword" finished-at="2025-06-27T02:19:46 GMT-07:00" duration-ms="11794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidEmailPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_MerchantLogin@35e2d654]" started-at="2025-06-27T02:19:46 GMT-07:00" name="tearDown" finished-at="2025-06-27T02:19:46 GMT-07:00" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.testCases_MerchantLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
