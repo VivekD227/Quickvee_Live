@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>testng-customsuite.xml</span>
+                    <span>C:\Users\vijay\AppData\Local\Temp\testng-eclipse-1974096186\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">17 methods, 1 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="properErrorMessage">properErrorMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -108,12 +122,32 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="blankCredential">blankCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="forgetPasswordClick">forgetPasswordClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="forgetPasswordVisible">forgetPasswordVisible</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="invalidEmail">invalidEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="invalidPassword">invalidPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="invalidStoreNameEmail">invalidStoreNameEmail</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,6 +172,21 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="merchantloginInValidCredential">merchantloginInValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="merchantloginValidCredential">merchantloginValidCredential</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="passwordToggleButton">passwordToggleButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="testCases.testCases_MerchantLogin" class="method navigator-link" hash-for-method="quickveeLogoDisplay">quickveeLogoDisplay</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -158,6 +207,57 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.testCases_MerchantLogin</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="properErrorMessage">
+                  </a> <!-- properErrorMessage -->
+                  <span class="method-name">properErrorMessage</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Invalid Username] but found [Username is required]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at testCases.testCases_MerchantLogin.properErrorMessage(testCases_MerchantLogin.java:564)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -173,6 +273,27 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="blankCredential">
+                  </a> <!-- blankCredential -->
+                  <span class="method-name">blankCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgetPasswordClick">
+                  </a> <!-- forgetPasswordClick -->
+                  <span class="method-name">forgetPasswordClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="forgetPasswordVisible">
+                  </a> <!-- forgetPasswordVisible -->
+                  <span class="method-name">forgetPasswordVisible</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="invalidEmail">
                   </a> <!-- invalidEmail -->
                   <span class="method-name">invalidEmail</span>
@@ -183,6 +304,13 @@
                   <a name="invalidPassword">
                   </a> <!-- invalidPassword -->
                   <span class="method-name">invalidPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidStoreNameEmail">
+                  </a> <!-- invalidStoreNameEmail -->
+                  <span class="method-name">invalidStoreNameEmail</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -215,6 +343,27 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="merchantloginInValidCredential">
+                  </a> <!-- merchantloginInValidCredential -->
+                  <span class="method-name">merchantloginInValidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="merchantloginValidCredential">
+                  </a> <!-- merchantloginValidCredential -->
+                  <span class="method-name">merchantloginValidCredential</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="passwordToggleButton">
+                  </a> <!-- passwordToggleButton -->
+                  <span class="method-name">passwordToggleButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="quickveeLogoDisplay">
                   </a> <!-- quickveeLogoDisplay -->
                   <span class="method-name">quickveeLogoDisplay</span>
@@ -232,7 +381,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse-256848126/testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\vijay\AppData\Local\Temp\testng-eclipse-1974096186\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -281,48 +430,80 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginInValidCredential')
+data.setCell(0, 1, 'invalidPassword')
 data.setCell(0, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(0, 3, 50487);
+data.setCell(0, 3, 9060);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'InvalidEmailPassword')
+data.setCell(1, 1, 'loginInValidCredential')
 data.setCell(1, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(1, 3, 11794);
+data.setCell(1, 3, 6332);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'invalidStorename')
+data.setCell(2, 1, 'invalidEmail')
 data.setCell(2, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(2, 3, 11008);
+data.setCell(2, 3, 6202);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'invalidEmail')
+data.setCell(3, 1, 'invalidStorename')
 data.setCell(3, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(3, 3, 10485);
+data.setCell(3, 3, 6055);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invalidPassword')
+data.setCell(4, 1, 'invalidStorenamePassword')
 data.setCell(4, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(4, 3, 9634);
+data.setCell(4, 3, 6018);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginValidCredential')
+data.setCell(5, 1, 'invalidStoreNameEmail')
 data.setCell(5, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(5, 3, 9093);
+data.setCell(5, 3, 6010);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'invalidStorenamePassword')
+data.setCell(6, 1, 'merchantloginInValidCredential')
 data.setCell(6, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(6, 3, 8648);
+data.setCell(6, 3, 6007);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'quickveeLogoDisplay')
+data.setCell(7, 1, 'InvalidEmailPassword')
 data.setCell(7, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(7, 3, 7403);
+data.setCell(7, 3, 5949);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'validatingCorrectPage')
+data.setCell(8, 1, 'passwordToggleButton')
 data.setCell(8, 2, 'testCases.testCases_MerchantLogin')
-data.setCell(8, 3, 4869);
+data.setCell(8, 3, 5938);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'blankCredential')
+data.setCell(9, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(9, 3, 5857);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'loginValidCredential')
+data.setCell(10, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(10, 3, 5812);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'properErrorMessage')
+data.setCell(11, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(11, 3, 5804);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'merchantloginValidCredential')
+data.setCell(12, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(12, 3, 5486);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'forgetPasswordClick')
+data.setCell(13, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(13, 3, 5268);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'quickveeLogoDisplay')
+data.setCell(14, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(14, 3, 4926);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'forgetPasswordVisible')
+data.setCell(15, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(15, 3, 4485);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validatingCorrectPage')
+data.setCell(16, 2, 'testCases.testCases_MerchantLogin')
+data.setCell(16, 3, 4055);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -355,107 +536,205 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validatingCorrectPage</span>
-                <span class="method-start">15846 ms</span>
+                <span class="method-start">9016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20719 ms</span>
+                <span class="method-start">13073 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20818 ms</span>
+                <span class="method-start">13700 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">quickveeLogoDisplay</span>
-                <span class="method-start">33583 ms</span>
+                <span class="method-start">21731 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">40990 ms</span>
+                <span class="method-start">26659 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">41103 ms</span>
+                <span class="method-start">27278 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginValidCredential</span>
-                <span class="method-start">49440 ms</span>
+                <span class="method-start">34081 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58534 ms</span>
+                <span class="method-start">39894 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58618 ms</span>
+                <span class="method-start">40509 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginInValidCredential</span>
-                <span class="method-start">71650 ms</span>
+                <span class="method-start">46210 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">122142 ms</span>
+                <span class="method-start">52543 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">122281 ms</span>
+                <span class="method-start">53168 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidEmail</span>
-                <span class="method-start">135300 ms</span>
+                <span class="method-start">58847 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">145793 ms</span>
+                <span class="method-start">65050 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">145887 ms</span>
+                <span class="method-start">65666 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidPassword</span>
-                <span class="method-start">153789 ms</span>
+                <span class="method-start">71272 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">163425 ms</span>
+                <span class="method-start">80333 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">163536 ms</span>
+                <span class="method-start">80965 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidStorename</span>
-                <span class="method-start">172663 ms</span>
+                <span class="method-start">94206 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">183674 ms</span>
+                <span class="method-start">100263 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">183764 ms</span>
+                <span class="method-start">100907 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidStorenamePassword</span>
-                <span class="method-start">190049 ms</span>
+                <span class="method-start">106204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">198699 ms</span>
+                <span class="method-start">112223 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">198789 ms</span>
+                <span class="method-start">112836 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">InvalidEmailPassword</span>
-                <span class="method-start">210762 ms</span>
+                <span class="method-start">118149 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">222561 ms</span>
+                <span class="method-start">124099 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">124734 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidStoreNameEmail</span>
+                <span class="method-start">129927 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">135938 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">136574 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">properErrorMessage</span>
+                <span class="method-start">141889 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">147695 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">148315 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">blankCredential</span>
+                <span class="method-start">155143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">161001 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">161656 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">passwordToggleButton</span>
+                <span class="method-start">166896 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">172834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">173441 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgetPasswordVisible</span>
+                <span class="method-start">178674 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">183160 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">183795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">forgetPasswordClick</span>
+                <span class="method-start">189074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">194342 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">194978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">merchantloginValidCredential</span>
+                <span class="method-start">200308 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">205796 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">206410 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">merchantloginInValidCredential</span>
+                <span class="method-start">212904 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">218913 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

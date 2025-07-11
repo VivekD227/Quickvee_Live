@@ -6,8 +6,8 @@
       <class name="testCases.testCases_MerchantLogin">
         <methods>
           <include name="tearDown"/>
+          <include name="properErrorMessage"/>
           <include name="setUp"/>
-          <include name="loginInValidCredential"/>
         </methods>
       </class> <!-- testCases.testCases_MerchantLogin -->
     </classes>

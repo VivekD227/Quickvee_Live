@@ -1,173 +1,166 @@
 package testCases;
 
-import java.time.Duration;
-
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.*;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import pageObjects.CustomerLogin;
-import pageObjects.HomePage;
-import pageObjects.RegisterPage;
+import utilities.baseClass;
 
 @Listeners(utilities.TestListener.class)
 
-public class testCases_Register {
-
-	WebDriver driver;
-	HomePage loginpage;
-	CustomerLogin homepage;
-	RegisterPage register;
-
-	@BeforeMethod
-	public void setUp() {
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get("https://quickvee.com");
-		loginpage = new HomePage(driver);
-		homepage = new CustomerLogin(driver);
-		register = new RegisterPage(driver);
-
-	}
+public class testCases_Register extends baseClass {
 
 	@Test(priority = 1)
 	public void onlyMandatoryField() throws InterruptedException {
 
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("");
+		logger.info("Validate Registering an Account by providing only the Mandatory fields");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
 
-		System.out.println("Validate Registering an Account by providing only the Mandatory fields");
-		System.out.println("-----------------------");
-		register.setFirstName("Vivek");
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setPhone("8928185554");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String url = "https://quickvee.com";
 
 		Assert.assertEquals(driver.getCurrentUrl(), url);
-
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 2)
 	public void validateSucessMessage() throws InterruptedException {
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
-
-		System.out.println(
+		logger.info("");
+		logger.info(
 				"Validate whether if we create a customer successfully then the name of login button is change as of name of customer");
-		System.out.println("-----------------------");
-		register.setFirstName("Vivek");
+		logger.info("-----------------------");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("8928185554");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
-		loginpage.loggedIn();
+		homePage.loggedIn();
 
 		Thread.sleep(2000);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 	}
 
 	@Test(priority = 3)
 	public void allFields() throws InterruptedException {
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Validate the register field by providing all the information (LastName)");
+		logger.info("-----------------------");
 
-		System.out.println("Validate the register field by providing all the information (LastName)");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
 
-		register.setFirstName("Vivek");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("8928185554");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
-		loginpage.loggedIn();
+		homePage.loggedIn();
 		String url = "https://quickvee.com";
 
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -175,42 +168,50 @@ public class testCases_Register {
 
 	@Test(priority = 4)
 	public void differentPasswordAndConfirmPassword() throws InterruptedException {
-		System.out.println(
+
+		logger.info("");
+		logger.info(
 				"Validate Registering an Account by entering different passwords into 'Password' and 'Password Confirm' fields");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
 
-		register.setFirstName("Vivek");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("8928185554");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek123");
+		register.setConfirmPassword(p.getProperty("newCustomerInvalidConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
+
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
 		String errorMessage = "Confirm Password not matching";
@@ -218,6 +219,7 @@ public class testCases_Register {
 		Assert.assertEquals(
 				driver.findElement(By.xpath("//span[normalize-space()='Confirm Password not matching']")).getText(),
 				errorMessage);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -225,42 +227,48 @@ public class testCases_Register {
 
 	@Test(priority = 5)
 	public void properValidationMessage() throws InterruptedException {
-		System.out.println(
+
+		logger.info("");
+		logger.info(
 				"Verify proper notification messages are displayed for the mandatory fields, when you don't provide any fields in the 'Register Account' page and submit");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
 
-		register.setFirstName("");
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerBlankFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("");
+		register.setLastName(p.getProperty("newCustomerBlankLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("");
+		register.setPhone(p.getProperty("newCustomerBlankPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
-		register.setUsername("");
+		register.setUsername(p.getProperty("newCustomerBlankUserName"));
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("");
+		register.setPassword(p.getProperty("newCustomerBlankPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("");
+		register.setConfirmPassword(p.getProperty("newCustomerBlankConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String firstNameErrorMessage = "Please enter First Name";
 		String phoneErrorMessage = "Please enter phone number";
@@ -287,48 +295,56 @@ public class testCases_Register {
 
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
+
 		Thread.sleep(2000);
 
 	}
 
 	@Test(priority = 6)
 	public void existingEmail() throws InterruptedException {
-		System.out.println(
+
+		logger.info("");
+		logger.info(
 				"Verify Registering an Account by providing the existing account details (i.e. existing email address)");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
 
-		register.setFirstName("Vivek");
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
-		register.setUsername("vivek.dubey521@gmail.com");
+		register.setUsername(p.getProperty("newCustomerExistingUserName"));
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
@@ -337,6 +353,7 @@ public class testCases_Register {
 
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='MuiAlert-message css-1xsto0d']")).getText(),
 				emailExistError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -344,42 +361,47 @@ public class testCases_Register {
 
 	@Test(priority = 7)
 	public void invalidEmailFormat() throws InterruptedException {
-		System.out
-				.println("Validate Registering an Account by providing an invalid email address into the E-Mail field");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Validate Registering an Account by providing an invalid email address into the E-Mail field");
+		logger.info("-----------------------");
 
-		register.setFirstName("Vivek");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
-		register.setUsername("vivek.dubey521gmail.com");
+		register.setUsername(p.getProperty("newCustomerInvalidUserName"));
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String emailInvalidError = "Please enter valid email";
 
@@ -389,6 +411,7 @@ public class testCases_Register {
 
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -396,41 +419,48 @@ public class testCases_Register {
 
 	@Test(priority = 8)
 	public void invalidPhoneNumber() throws InterruptedException {
-		System.out.println("Verify Registering an Account by providing an invalid phone number");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Verify Registering an Account by providing an invalid phone number");
+		logger.info("-----------------------");
 
-		register.setFirstName("Vivek");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("98765");
+		register.setPhone(p.getProperty("newCustomerInvalidPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String phoneErrorMessage = "Phone no not valid";
 
@@ -438,6 +468,7 @@ public class testCases_Register {
 				phoneErrorMessage);
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -445,42 +476,47 @@ public class testCases_Register {
 
 	@Test(priority = 9)
 	public void invalidFirstName() throws InterruptedException {
+		logger.info("");
+		logger.info("Validate the register of account by providing Invalid first name input");
+		logger.info("-----------------------");
 
-		System.out.println("Validate the register of account by providing Invalid first name input");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
 
-		register.setFirstName("Vive@k");
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerInvalidFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String firstNameError = "Name only contain alphabet";
 
@@ -489,6 +525,7 @@ public class testCases_Register {
 				firstNameError);
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -496,41 +533,48 @@ public class testCases_Register {
 
 	@Test(priority = 10)
 	public void invalidLastName() throws InterruptedException {
-		System.out.println("Validate the register of account by providing Invalid last name input");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Validate the register of account by providing Invalid last name input");
+		logger.info("-----------------------");
 
-		register.setFirstName("Vivek");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dube@y");
+		register.setLastName(p.getProperty("newCustomerInvalidLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String lastNameError = "Name only contain alphabet";
 
@@ -539,48 +583,55 @@ public class testCases_Register {
 				lastNameError);
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 	}
 
 	@Test(priority = 11)
 	public void invalidPasswordSC() throws InterruptedException {
-		System.out.println(
+		logger.info("");
+		logger.info(
 				"Validate whether the Password fields in the Register Account page are following Password Complexity Standards");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
 
-		register.setFirstName("Vivek");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek123");
+		register.setPassword(p.getProperty("newCustomerInvalidPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String passwordError = "Password should contain Special Character";
 
@@ -591,6 +642,8 @@ public class testCases_Register {
 
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
+
 		Thread.sleep(2000);
 
 	}
@@ -598,37 +651,51 @@ public class testCases_Register {
 	@Test(priority = 12)
 	public void invalidPasswordNumber() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@");
+		register.setPassword(p.getProperty("newCustomerInvalidPasswordNumber"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String passwordError = "Password should contain number";
 
 		Assert.assertEquals(
 				driver.findElement(By.xpath("//span[normalize-space()='Password should contain number']")).getText(),
 				passwordError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -637,31 +704,44 @@ public class testCases_Register {
 	@Test(priority = 13)
 	public void invalidPasswordLC() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("123@C");
+		register.setPassword(p.getProperty("newCustomerInvalidPasswordLC"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String passwordError = "Password should contain Lowercase letter";
 
@@ -671,37 +751,52 @@ public class testCases_Register {
 				passwordError);
 
 		Thread.sleep(2000);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 	}
 
 	@Test(priority = 14)
 	public void invalidPasswordUC() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("123@c");
+		register.setPassword(p.getProperty("newCustomerInvalidPasswordUC"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String passwordError = "Password should contain Uppercase letter";
 
@@ -709,6 +804,7 @@ public class testCases_Register {
 				driver.findElement(By.xpath("//span[normalize-space()='Password should contain Uppercase letter']"))
 						.getText(),
 				passwordError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -717,37 +813,51 @@ public class testCases_Register {
 	@Test(priority = 15)
 	public void invalidPasswordLength() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("123@Cc");
+		register.setPassword(p.getProperty("newCustomerInvalidPasswordUCLength"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String passwordError = "Length should be greater or equal to 8";
 
 		Assert.assertEquals(driver
 				.findElement(By.xpath("//span[normalize-space()='Length should be greater or equal to 8']")).getText(),
 				passwordError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -755,16 +865,22 @@ public class testCases_Register {
 
 	@Test(priority = 16)
 	public void displayOtherText() throws InterruptedException {
-		System.out.println(
-				"Validate whether the Quickvee image, Customer Register Text and Discover shopping delights! text visible or not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info(
+				"Validate whether the Quickvee image, Customer Register Text and Discover shopping delights! text visible or not");
+		logger.info("-----------------------");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
 
 		String textRegister = "Customer Register";
 		String customerText = "Discover shopping delights!";
@@ -779,60 +895,82 @@ public class testCases_Register {
 				.findElement(By.xpath("//span[text()='Discover shopping delights!' and @class='sub-heading-from']"))
 				.getText(), customerText);
 
+		logger.info("All the information is displayed if the test case is pass");
+
 	}
 
 	@Test(priority = 17)
 	public void alreadyAccountText() throws InterruptedException {
-		System.out.println("Check whether the text \"Already have an account?Login\" field is displayed or not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Check whether the text \\\"Already have an account?Login\\\" field is displayed or not");
+		logger.info("-----------------------");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
 
 		String alreadyAccount = "Already have an account?Login";
 
 		Assert.assertEquals(driver.findElement(By.xpath("//form[1]//div[2]//p[1]")).getText(), alreadyAccount);
+		logger.info("The text is: " + alreadyAccount);
 
 	}
 
 	@Test(priority = 18)
 
 	public void merchantAccountText() throws InterruptedException {
-		System.out.println("Check whether the text \"Already have an account?Login\" field is displayed or not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Check whether the text \"Already have an account?Login\" field is displayed or not");
+		logger.info("-----------------------");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
 
 		String merchantAccount = "Are you a Merchant?Login";
 
 		Assert.assertEquals(driver.findElement(By.xpath("//form[1]//div[2]//p[2]")).getText(), merchantAccount);
+		logger.info("The text is: " + merchantAccount);
 
 	}
 
 	@Test(priority = 19)
 	public void customerLoginButtonCheck() throws InterruptedException {
-
-		System.out.println(
+		logger.info("");
+		logger.info(
 				"check whether when we click on login button of \"Already have an account?Login\" then it allows customer login or not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
 
 		register.customerLoginButton();
+		logger.info("Customer Login button is clicked");
+
 		String url = "https://quickvee.com/customer-login";
 		String customerLoginText = "Customer Login";
 		String welcomeText = "Welcome Back, Login to Shop";
@@ -841,25 +979,33 @@ public class testCases_Register {
 		Assert.assertEquals(driver.findElement(By.xpath("//h1[normalize-space()='Customer Login']")).getText(),
 				customerLoginText);
 		Assert.assertEquals(driver.findElement(By.xpath("//span[@class='sub-heading-from']")).getText(), welcomeText);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 	}
 
 	@Test(priority = 20)
 
 	public void merchantLoginButtonCheck() throws InterruptedException {
-		System.out.println(
-				"check whether when we click on login button of \"Are you a Merchant?\" then it allows customer login or not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info(
+				"check whether when we click on login button of \\\"Are you a Merchant?\\\" then it allows customer login or not");
+		logger.info("-----------------------");
+
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
 
 		String originalWindow = driver.getWindowHandle();
 		register.merchantLoginButton();
+		logger.info("User click on merchant login button");
 
 		for (String windowHandle : driver.getWindowHandles()) {
 			if (!windowHandle.equals(originalWindow)) {
@@ -871,47 +1017,55 @@ public class testCases_Register {
 		String url = "https://www.quickvee.com/merchants/login";
 
 		Assert.assertEquals(driver.getCurrentUrl(), url, "Merchant login tab URL validation failed");
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 	}
 
 	@Test(priority = 21)
 	public void firstNameBlank() throws InterruptedException {
-		System.out.println(
+
+		logger.info("");
+		logger.info(
 				"Check whether we skip one of any mandatory field and click on register then, the new customer is register or not?");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
+		logger.info("-----------------------");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
 
-		register.setFirstName("");
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerBlankFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("8928185554");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String url = "https://quickvee.com/register";
 		String ExpectedError = "Please enter First Name";
@@ -920,6 +1074,7 @@ public class testCases_Register {
 		Assert.assertEquals(
 				driver.findElement(By.xpath("//span[normalize-space()='Please enter First Name']")).getText(),
 				ExpectedError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -928,31 +1083,44 @@ public class testCases_Register {
 	@Test(priority = 22)
 	public void phoneBlank() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("");
+		register.setPhone(p.getProperty("newCustomerBlankPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String url = "https://quickvee.com/register";
 		String ExpectedError = "Please enter phone number";
@@ -961,6 +1129,7 @@ public class testCases_Register {
 		Assert.assertEquals(
 				driver.findElement(By.xpath("//span[normalize-space()='Please enter phone number']")).getText(),
 				ExpectedError);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
@@ -969,32 +1138,44 @@ public class testCases_Register {
 	@Test(priority = 23)
 	public void emailBlank() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("78459621245");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
-		register.setUsername("");
+		register.setUsername(p.getProperty("newCustomerBlankUserName"));
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
-
+		logger.info("User click on registered button");
 		String url = "https://quickvee.com/register";
 		String ExpectedError = "Please enter email";
 
@@ -1009,32 +1190,44 @@ public class testCases_Register {
 	@Test(priority = 24)
 	public void passwordBlank() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("78459621245");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("");
+		register.setPassword(p.getProperty("newCustomerBlankPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
-
+		logger.info("User click on registered button");
 		String url = "https://quickvee.com/register";
 		String ExpectedError = "Please enter password";
 
@@ -1049,31 +1242,44 @@ public class testCases_Register {
 	@Test(priority = 25)
 	public void confirmPasswordBlank() throws InterruptedException {
 
-		register.setFirstName("Vivek");
+		logger.info("");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("78459621245");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("");
+		register.setConfirmPassword(p.getProperty("newCustomerBlankConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String url = "https://quickvee.com/register";
 		String ExpectedError = "Confirm Password not matching";
@@ -1089,42 +1295,48 @@ public class testCases_Register {
 
 	@Test(priority = 26)
 	public void uncheckCheckBox() throws InterruptedException {
-		System.out
-				.println("Check whether we uncheck the capcta checkbox then customer can register the account of not");
-		loginpage.loginPageDisplay();
-		loginpage.notLogin();
-		loginpage.loginBtn();
-		System.out.println("");
 
-		homepage.isRegisterPage();
-		homepage.RegisterBtnClick();
-		System.out.println("");
+		logger.info("");
+		logger.info("Check whether we uncheck the capcta checkbox then customer can register the account of not");
+		logger.info("-----------------------");
 
-		register.setFirstName("Vivek");
+		homePage.loginPageDisplay();
+		logger.info("User is in Home Page");
+
+		homePage.notLogin();
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.isRegisterPage();
+		customerLogin.RegisterBtnClick();
+		logger.info("User click on new register button");
+
+		register.setFirstName(p.getProperty("newCustomerFirstName"));
 		String firstNameField = register.getFirstName();
-		System.out.println("First Name: " + firstNameField);
+		logger.info("First Name: " + firstNameField);
 
-		register.setLastName("Dubey");
+		register.setLastName(p.getProperty("newCustomerLastName"));
 		String lastNameField = register.getLastName();
-		System.out.println("Last Name: " + lastNameField);
+		logger.info("Last Name: " + lastNameField);
 
-		register.setPhone("9876542313");
+		register.setPhone(p.getProperty("newCustomerPhoneNumber"));
 		String phoneFiled = register.getPhone();
-		System.out.println("Phone Number: " + phoneFiled);
+		logger.info("Phone Number: " + phoneFiled);
 
 		register.setUsername(register.newEmail() + "@gmail.com");
 		String usernameField = register.getUsername();
-		System.out.println("Username: " + usernameField);
+		logger.info("Username: " + usernameField);
 
-		register.setPassword("Vivek@123");
+		register.setPassword(p.getProperty("newCustomerPassword"));
 		String passwordField = register.getPassword();
-		System.out.println("Password: " + passwordField);
+		logger.info("Password: " + passwordField);
 
-		register.setConfirmPassword("Vivek@123");
+		register.setConfirmPassword(p.getProperty("newCustomerConfirmPassword"));
 		String CpasswordField = register.getConfirPassword();
-		System.out.println("Confirm Password: " + CpasswordField);
+		logger.info("Confirm Password: " + CpasswordField);
 
 		register.clickRegister();
+		logger.info("User click on registered button");
 
 		String firstNameError = "Please check captcha";
 
@@ -1132,15 +1344,10 @@ public class testCases_Register {
 				firstNameError);
 		String url = "https://quickvee.com/register";
 		Assert.assertEquals(driver.getCurrentUrl(), url);
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
 		Thread.sleep(2000);
 
-	}
-
-	@AfterMethod
-	public void tearDown() throws InterruptedException {
-		Thread.sleep(1000);
-		driver.quit();
 	}
 
 }

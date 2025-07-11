@@ -1,0 +1,48 @@
+		logger.info("Validate logging into the Application using valid credentials");
+		logger.info("-----------------------");
+		logger.info("");
+		
+		homePage.loginBtn();
+		logger.info("User click on login button");
+
+		customerLogin.merchantLoginClick();
+		logger.info("User click on merchant login button");
+
+		String originalWindow = driver.getWindowHandle();
+
+		for (String windowHandle : driver.getWindowHandles()) {
+			if (!windowHandle.equals(originalWindow)) {
+				driver.switchTo().window(windowHandle);
+				break;
+			}
+		}
+		merchantLogin.setStoreName("superadmin");
+		String storeNameField = merchantLogin.getStoreName();
+		logger.info("Store Name: " + storeNameField);
+		logger.info("");
+		
+		merchantLogin.setUserName("superadmin");
+		String userNameField = merchantLogin.getUserName();
+		logger.info("User Name: " + userNameField);
+		logger.info("");
+		
+		merchantLogin.setPassword("S3CUrePaSsw@rd!25");
+		String passwordField = merchantLogin.getPassword();
+		logger.info("Password: " + passwordField);
+		logger.info("");
+		
+		merchantLogin.loginBtnClick();
+		logger.info("User click on login button to enter in merchant login");
+
+		Thread.sleep(1000);
+		String actualUrl = driver.getCurrentUrl();
+		System.out.println("Redirected URL after login: " + actualUrl);
+
+		String expectedUrl = "https://www.quickvee.com/merchants/users/unapprove";
+		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
+		String superAdmin = "Superadmin";
+		Assert.assertEquals(driver.findElement(By.xpath("//p[@class='admin_medium']")).getText(), superAdmin);
+		
+		logger.info("User is on " + driver.getCurrentUrl() + " url");
+
+	}
