@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.testCases_MerchantLogin">
+      <class name="testCases.testCases_ForgotPassword">
         <methods>
           <include name="tearDown"/>
-          <include name="properErrorMessage"/>
           <include name="setUp"/>
+          <include name="validateResetLinkReceivedInEmail"/>
         </methods>
-      </class> <!-- testCases.testCases_MerchantLogin -->
+      </class> <!-- testCases.testCases_ForgotPassword -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -111,7 +111,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/users/unapprove";
@@ -217,7 +217,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/login";
@@ -434,7 +434,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/login";
@@ -817,7 +817,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/login";
@@ -1094,7 +1094,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/login";
@@ -1151,7 +1151,7 @@ public class testCases_MerchantLogin extends baseClass {
 		merchantLogin.loginBtnClick();
 		logger.info("User click on login button to enter in merchant login");
 
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		String actualUrl = driver.getCurrentUrl();
 
 		String expectedUrl = "https://www.quickvee.com/merchants/login";

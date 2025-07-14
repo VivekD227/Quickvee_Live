@@ -75,7 +75,6 @@ public class MerchantLogin extends basePage {
 	public void loginBtnClick() {
 		elementClick(loginBtn);
 		driver.findElement(loginBtn).click();
-		System.out.println("Login button is clicked");
 	}
 
 	public boolean forgotPasswordDisplay() {

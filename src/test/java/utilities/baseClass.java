@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.CustomerLogin;
+import pageObjects.ForgotPassword;
 import pageObjects.HomePage;
 import pageObjects.MerchantLogin;
 import pageObjects.RegisterPage;
@@ -23,7 +24,7 @@ public class baseClass {
 	public CustomerLogin customerLogin;
 	public RegisterPage register;
 	public MerchantLogin merchantLogin;
-	
+	public ForgotPassword forgotPassword;
 	public Logger logger;
 	
 	public Properties p;
@@ -47,6 +48,7 @@ public class baseClass {
 		customerLogin = new CustomerLogin(driver);
 		register = new RegisterPage(driver);
 		merchantLogin = new MerchantLogin(driver);
+		forgotPassword = new ForgotPassword(driver);
 	}
 	
 	
