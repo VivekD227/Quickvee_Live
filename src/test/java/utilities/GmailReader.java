@@ -39,7 +39,7 @@ public class GmailReader {
             for (int i = messages.length - 1; i >= 0; i--) {
                 Message message = messages[i];
                 String subject = message.getSubject();
-                System.out.println("Checking email: " + subject);
+               // System.out.println("Checking email: " + subject);
 
                 if (subject != null && subject.toLowerCase().contains("reset")) {
                     System.out.println("Found reset password email");
@@ -90,4 +90,68 @@ public class GmailReader {
         }
         return "";
     }
+    
+    public static class EmailContent {
+        public String subject;
+        public String body;
+
+        public EmailContent(String subject, String body) {
+            this.subject = subject;
+            this.body = body;
+        }
+    }
+
+    public static EmailContent getLatestResetEmail(String userEmail, String password) {
+        try {
+            Properties props = new Properties();
+            props.put("mail.store.protocol", "imaps");
+
+            Session session = Session.getDefaultInstance(props, null);
+            Store store = session.getStore("imaps");
+            store.connect("imap.gmail.com", userEmail, password);
+
+            Folder inbox = store.getFolder("INBOX");
+            inbox.open(Folder.READ_ONLY);
+
+            Message[] messages = inbox.search(new FlagTerm(new Flags(Flags.Flag.SEEN), false));
+
+            for (int i = messages.length - 1; i >= 0; i--) {
+                Message message = messages[i];
+                String subject = message.getSubject();
+
+                if (subject != null && subject.toLowerCase().contains("reset password")) {
+                    String body = getTextFromMessage(message);
+                    inbox.close(false);
+                    store.close();
+                    return new EmailContent(subject, body);
+                }
+            }
+
+            inbox.close(false);
+            store.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    private static String getTextFromEmail(Message message) throws Exception {
+        if (message.isMimeType("text/plain")) {
+            return message.getContent().toString();
+        } else if (message.isMimeType("multipart/*")) {
+            Multipart multipart = (Multipart) message.getContent();
+            for (int i = 0; i < multipart.getCount(); i++) {
+                BodyPart part = multipart.getBodyPart(i);
+                if (part.isMimeType("text/plain")) {
+                    return part.getContent().toString();
+                } else if (part.isMimeType("text/html")) {
+                    String html = (String) part.getContent();
+                    return html.replaceAll("\\<.*?\\>", ""); // strip HTML tags
+                }
+            }
+        }
+        return "";
+    }
+
 }

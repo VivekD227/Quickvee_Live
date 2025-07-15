@@ -25,7 +25,10 @@ public class ForgotPassword extends basePage {
 	
 	By errorEmailMessage = By.xpath("//span[@class='input-error']");
 	
-
+	By emailFieldMerchant = By.xpath("//input[@id=':r3:']");
+			
+	By submit_Btn_Merchant = By.xpath("//button[normalize-space()='submit']");
+	
 	public boolean quickveeLogoDisplay() {
 		visiblityOfElement(quickveeLogo);
 		return driver.findElement(quickveeLogo).isDisplayed();
@@ -40,7 +43,11 @@ public class ForgotPassword extends basePage {
 		visiblityOfElement(emailField);
 		driver.findElement(emailField).sendKeys(email);
 	}
-
+	
+	public void setEmailIdMerchant(String email) {
+		visiblityOfElement(emailFieldMerchant);
+		driver.findElement(emailFieldMerchant).sendKeys(email);
+	}
 	public String getEmailId() {
 		return driver.findElement(emailField).getAttribute("value");
 
@@ -49,6 +56,11 @@ public class ForgotPassword extends basePage {
 	public void submitBtnClick() {
 		elementClick(submit_Btn);
 		driver.findElement(submit_Btn).click();
+	}
+	
+	public void submitBtnClickMerchant() {
+		elementClick(submit_Btn_Merchant);
+		driver.findElement(submit_Btn_Merchant).click();
 	}
 	
 	public String emailMessageDisplayed() {

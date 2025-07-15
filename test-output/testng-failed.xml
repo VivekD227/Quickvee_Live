@@ -6,8 +6,9 @@
       <class name="testCases.testCases_ForgotPassword">
         <methods>
           <include name="tearDown"/>
+          <include name="emailErrorMessageMerchant"/>
           <include name="setUp"/>
-          <include name="validateResetLinkReceivedInEmail"/>
+          <include name="validateResetEmailTitleAndBodyMerchant"/>
         </methods>
       </class> <!-- testCases.testCases_ForgotPassword -->
     </classes>

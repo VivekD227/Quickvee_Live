@@ -1144,3 +1144,659 @@
 16:53:46.924 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
 16:53:47.031 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
 16:53:47.252 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+10:15:07.407 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+10:15:07.410 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go fogot password page if he/she click on forgot password
+10:15:07.410 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+10:15:07.494 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+10:15:07.592 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+10:15:07.632 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+10:15:19.026 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+10:15:19.026 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+10:15:19.027 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+10:15:19.148 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+10:15:19.247 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+10:15:20.349 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+10:15:26.808 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+10:15:26.808 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+10:15:26.808 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+10:15:26.925 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+10:15:27.041 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+10:15:29.347 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+10:15:40.124 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+10:15:40.125 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+10:15:40.125 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+10:15:40.235 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+10:15:40.356 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+10:15:46.321 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:109)oggger - User is on https://quickvee.com/forgot-password url
+10:15:52.756 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+10:15:52.756 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+10:15:52.756 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+10:15:52.891 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+10:15:52.993 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+10:15:55.261 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+10:16:00.675 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+10:16:00.675 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+10:16:00.675 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+10:16:00.777 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:147)oggger - User click on login button
+10:16:00.897 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:150)oggger - User click on forgot password button
+10:16:03.078 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:161)oggger - User is on https://quickvee.com/forgot-password url
+10:16:09.513 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:168)oggger - 
+10:16:09.514 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:169)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+10:16:09.515 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:170)oggger - -----------------------
+10:16:09.754 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
+10:16:09.867 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
+10:16:10.077 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+10:23:15.281 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+10:23:15.284 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go fogot password page if he/she click on forgot password
+10:23:15.284 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+10:23:15.361 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+10:23:15.466 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+10:23:15.512 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+10:23:22.307 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+10:23:22.307 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+10:23:22.308 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+10:23:22.430 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+10:23:22.562 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+10:23:24.206 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+10:23:34.783 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+10:23:34.785 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+10:23:34.785 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+10:23:34.890 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+10:23:34.992 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+10:23:41.431 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+10:23:53.734 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+10:23:53.734 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+10:23:53.735 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+10:23:53.918 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+10:23:54.129 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+10:23:58.042 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:109)oggger - User is on https://quickvee.com/forgot-password url
+10:24:12.217 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+10:24:12.218 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+10:24:12.218 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+10:24:12.334 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+10:24:12.443 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+10:24:14.700 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+10:24:21.023 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+10:24:21.024 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+10:24:21.024 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+10:24:21.125 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:147)oggger - User click on login button
+10:24:21.222 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:150)oggger - User click on forgot password button
+10:24:23.426 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:161)oggger - User is on https://quickvee.com/forgot-password url
+10:24:29.774 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:168)oggger - 
+10:24:29.774 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:169)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+10:24:29.775 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:170)oggger - -----------------------
+10:24:29.892 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
+10:24:29.985 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
+10:24:30.177 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+10:35:31.848 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+10:35:31.850 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go fogot password page if he/she click on forgot password
+10:35:31.851 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+10:35:31.928 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+10:35:32.028 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+10:35:32.070 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+10:35:42.059 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+10:35:42.059 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+10:35:42.059 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+10:35:42.157 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+10:35:42.257 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+10:35:43.885 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+10:35:49.485 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+10:35:49.487 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+10:35:49.487 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+10:35:49.581 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+10:35:49.681 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+10:35:55.588 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+10:36:07.354 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+10:36:07.354 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+10:36:07.354 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+10:36:07.489 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+10:36:07.592 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+10:36:09.858 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:109)oggger - User is on https://quickvee.com/forgot-password url
+10:36:16.462 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+10:36:16.462 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+10:36:16.462 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+10:36:16.565 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+10:36:16.665 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+10:36:18.901 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+10:36:26.346 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+10:36:26.346 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+10:36:26.346 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+11:15:09.437 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+11:15:09.440 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go forgot password page if he/she click on forgot password
+11:15:09.440 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+11:15:09.561 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+11:15:09.670 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+11:15:09.721 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+11:15:22.192 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+11:15:22.193 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:15:22.193 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+11:15:22.309 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+11:15:22.417 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+11:15:23.532 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+11:15:29.739 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+11:15:29.739 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:15:29.739 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+11:15:29.839 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+11:15:29.939 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+11:15:36.378 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+11:15:46.492 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+11:15:46.492 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+11:15:46.492 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+11:15:46.588 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+11:15:46.683 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+11:16:03.709 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+11:16:03.709 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+11:16:03.709 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+11:16:03.807 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+11:16:03.899 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+11:16:06.107 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+11:16:17.418 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+11:16:17.419 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+11:16:17.419 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+11:16:17.531 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:147)oggger - User click on login button
+11:16:17.637 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:150)oggger - User click on forgot password button
+11:16:19.816 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:161)oggger - User is on https://quickvee.com/forgot-password url
+11:16:36.778 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:168)oggger - 
+11:16:36.778 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:169)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:16:36.778 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:170)oggger - -----------------------
+11:16:36.902 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
+11:16:36.985 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
+11:16:37.181 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+11:17:10.580 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:201)oggger - 
+11:17:10.581 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:202)oggger - Check whether the email contains proper title and body or not
+11:17:10.581 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:203)oggger - -----------------------
+11:17:14.132 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:211)oggger - 📧 Email Subject: Reset Password
+11:17:14.133 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:212)oggger - 📄 Email Body:
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:auto;border-spacing:0;border-collapse:collapse;background:#f6f6f6;border-radius:0px 0px 10px 10px">
+  <tbody>
+    <tr style="background-size:cover">
+          <td style="text-align:center;border-collapse:collapse;background:#fff;border-radius:10px 10px 0px 0px;color:white;height:50px;background-color:#0a64f9;padding: 10px;">
+            <img src="https://ci6.googleusercontent.com/proxy/KMcbu8zrXoyWKSbPbnxVubGTx7PgYRs0S09MuME0p2pHSnUzhBCauFlLKn8LlYdveuxEOkeZehwgsghRc06WBSAvXg=s0-d-e1-ft#https://sandbox.quickvee.com/images/maillogo.png" width="120px">
+          </td>
+        </tr>
+    <tr>
+          <td valign="middle" align="center" style="padding-top:25px;padding-bottom:15px;text-align:center;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <span style="font-size:20px;color:#2d2d2d">Hello Test Quickvee</span>
+          </td>
+        </tr>        
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              We have received a request to reset the password for your account.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              To reset your password, please <a href="http://quickvee.com/changePassword?vc=ZjJjNDM1NDI3ZmMwODQ0ZDk0MDA5YWEzZmZhNzVjMmE6fDp2aXZla0BpbWVyY2hhbnRlY2guY29t" target=\"_blank\">click here</a>.
+            </div>
+          </td>
+        </tr>   
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 25px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:13px;color:#6d6d6d;font-weight:normal"><br><br>
+               If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+            </div>
+          </td>
+        </tr> 
+  </tbody></table>
+
+11:17:25.792 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:226)oggger - 
+11:17:25.792 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:227)oggger - Validate the Merchant is able to go forgot password page if he/she click on forgot password
+11:17:25.792 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:228)oggger - -----------------------
+11:17:25.897 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:231)oggger - User click on login button
+11:17:26.019 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:234)oggger - User click on merchant login button
+11:17:30.079 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:246)oggger - User click on forgot password button
+11:17:30.853 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:253)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:17:42.262 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:259)oggger - 
+11:17:42.262 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:260)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:17:42.262 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:262)oggger - -----------------------
+11:17:42.375 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:265)oggger - User click on login button
+11:17:42.496 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:268)oggger - User click on merchant login button
+11:17:47.466 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:280)oggger - User click on forgot password button
+11:17:48.560 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:289)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:18:03.608 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:18:03.608 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:18:03.608 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:18:03.716 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:18:03.827 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:18:07.820 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:18:24.806 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:18:24.806 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:18:24.807 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:18:24.906 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:18:25.007 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:18:29.257 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:25:49.941 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+11:25:49.944 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go forgot password page if he/she click on forgot password
+11:25:49.944 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+11:25:53.018 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+11:25:53.110 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+11:25:53.154 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+11:26:03.615 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+11:26:03.615 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:26:03.615 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+11:26:03.712 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+11:26:03.810 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+11:26:04.913 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+11:26:15.315 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+11:26:15.315 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:26:15.315 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+11:26:15.415 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+11:26:15.510 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+11:26:18.240 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+11:26:24.674 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+11:26:24.675 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+11:26:24.675 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+11:26:24.771 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+11:26:24.866 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+11:26:31.243 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:109)oggger - User is on https://quickvee.com/forgot-password url
+11:26:42.361 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+11:26:42.361 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+11:26:42.361 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+11:26:42.461 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+11:26:42.561 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+11:26:44.791 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+11:27:06.054 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+11:27:06.055 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+11:27:06.055 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+11:27:06.176 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:147)oggger - User click on login button
+11:27:06.309 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:150)oggger - User click on forgot password button
+11:27:08.487 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:161)oggger - User is on https://quickvee.com/forgot-password url
+11:27:19.781 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:168)oggger - 
+11:27:19.782 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:169)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:27:19.782 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:170)oggger - -----------------------
+11:27:19.886 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
+11:27:19.995 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
+11:27:20.207 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+11:27:49.891 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:201)oggger - 
+11:27:49.891 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:202)oggger - Check whether the email contains proper title and body or not
+11:27:49.891 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:203)oggger - -----------------------
+11:27:53.301 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:211)oggger - 📧 Email Subject: Reset Password
+11:27:53.301 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:212)oggger - 📄 Email Body:
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:auto;border-spacing:0;border-collapse:collapse;background:#f6f6f6;border-radius:0px 0px 10px 10px">
+  <tbody>
+    <tr style="background-size:cover">
+          <td style="text-align:center;border-collapse:collapse;background:#fff;border-radius:10px 10px 0px 0px;color:white;height:50px;background-color:#0a64f9;padding: 10px;">
+            <img src="https://ci6.googleusercontent.com/proxy/KMcbu8zrXoyWKSbPbnxVubGTx7PgYRs0S09MuME0p2pHSnUzhBCauFlLKn8LlYdveuxEOkeZehwgsghRc06WBSAvXg=s0-d-e1-ft#https://sandbox.quickvee.com/images/maillogo.png" width="120px">
+          </td>
+        </tr>
+    <tr>
+          <td valign="middle" align="center" style="padding-top:25px;padding-bottom:15px;text-align:center;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <span style="font-size:20px;color:#2d2d2d">Hello Test Quickvee</span>
+          </td>
+        </tr>        
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              We have received a request to reset the password for your account.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              To reset your password, please <a href="http://quickvee.com/changePassword?vc=MzVlMDhhY2M2YjIxNTM1ZDAyMTI1N2M2MDIwN2ZkYWU6fDp2aXZla0BpbWVyY2hhbnRlY2guY29t" target=\"_blank\">click here</a>.
+            </div>
+          </td>
+        </tr>   
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 25px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:13px;color:#6d6d6d;font-weight:normal"><br><br>
+               If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+            </div>
+          </td>
+        </tr> 
+  </tbody></table>
+
+11:27:59.591 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:226)oggger - 
+11:27:59.592 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:227)oggger - Validate the Merchant is able to go forgot password page if he/she click on forgot password
+11:27:59.592 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:228)oggger - -----------------------
+11:27:59.687 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:231)oggger - User click on login button
+11:27:59.791 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:234)oggger - User click on merchant login button
+11:28:03.878 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:246)oggger - User click on forgot password button
+11:28:04.770 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:253)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:28:19.736 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:259)oggger - 
+11:28:19.736 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:260)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:28:19.736 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:262)oggger - -----------------------
+11:28:19.846 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:265)oggger - User click on login button
+11:28:19.986 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:268)oggger - User click on merchant login button
+11:28:40.045 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:280)oggger - User click on forgot password button
+11:28:41.156 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:289)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:28:48.345 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:28:48.345 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:28:48.345 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:28:48.440 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:28:48.543 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:28:54.145 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:29:11.984 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:29:11.984 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:29:11.984 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:29:12.081 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:29:12.181 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:29:16.896 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:32:20.593 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:17)oggger - 
+11:32:20.595 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:18)oggger - Validate the user is able to go forgot password page if he/she click on forgot password
+11:32:20.595 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:19)oggger - -----------------------
+11:32:20.704 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:22)oggger - User click on login button
+11:32:20.808 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:25)oggger - User click on forgot password button
+11:32:20.857 [main] INFO  testCases.testCases_ForgotPassword.directionURL(testCases_ForgotPassword.java:32)oggger - User is on https://quickvee.com/forgot-password url
+11:32:35.164 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:38)oggger - 
+11:32:35.164 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:39)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:32:35.164 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:41)oggger - -----------------------
+11:32:35.282 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:44)oggger - User click on login button
+11:32:35.393 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:47)oggger - User click on forgot password button
+11:32:37.029 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayed(testCases_ForgotPassword.java:56)oggger - User is on https://quickvee.com/forgot-password url
+11:32:47.629 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:62)oggger - 
+11:32:47.629 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:63)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:32:47.630 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:65)oggger - -----------------------
+11:32:47.750 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:68)oggger - User click on login button
+11:32:47.876 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:71)oggger - User click on forgot password button
+11:32:56.446 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessage(testCases_ForgotPassword.java:82)oggger - User is on https://quickvee.com/forgot-password url
+11:33:02.805 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:89)oggger - 
+11:33:02.805 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:90)oggger - check whether if customer is putting the invalid email id then the success message is coming or not
+11:33:02.805 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:92)oggger - -----------------------
+11:33:02.908 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:95)oggger - User click on login button
+11:33:02.996 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:98)oggger - User click on forgot password button
+11:33:07.820 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessage(testCases_ForgotPassword.java:109)oggger - User is on https://quickvee.com/forgot-password url
+11:33:14.255 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:116)oggger - 
+11:33:14.255 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:117)oggger - check whether if customer is putting invalid format email then what happen
+11:33:14.255 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:118)oggger - -----------------------
+11:33:14.363 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:121)oggger - User click on login button
+11:33:14.457 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:124)oggger - User click on forgot password button
+11:33:16.672 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormat(testCases_ForgotPassword.java:135)oggger - User is on https://quickvee.com/forgot-password url
+11:33:36.072 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:142)oggger - 
+11:33:36.072 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:143)oggger - check whether if customer is putting blank email then what happen
+11:33:36.072 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:144)oggger - -----------------------
+11:33:36.209 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:147)oggger - User click on login button
+11:33:36.313 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:150)oggger - User click on forgot password button
+11:33:38.527 [main] INFO  testCases.testCases_ForgotPassword.blankEmail(testCases_ForgotPassword.java:161)oggger - User is on https://quickvee.com/forgot-password url
+11:33:44.719 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:168)oggger - 
+11:33:44.720 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:169)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:33:44.720 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:170)oggger - -----------------------
+11:33:44.843 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:173)oggger - User click on login button
+11:33:44.953 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:176)oggger - User click on forgot password button
+11:33:45.180 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:181)oggger - User click on submit button
+11:34:11.209 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:201)oggger - 
+11:34:11.209 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:202)oggger - Check whether the email contains proper title and body or not
+11:34:11.209 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:203)oggger - -----------------------
+11:34:14.381 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:211)oggger - 📧 Email Subject: Reset Password
+11:34:14.381 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBody(testCases_ForgotPassword.java:212)oggger - 📄 Email Body:
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:auto;border-spacing:0;border-collapse:collapse;background:#f6f6f6;border-radius:0px 0px 10px 10px">
+  <tbody>
+    <tr style="background-size:cover">
+          <td style="text-align:center;border-collapse:collapse;background:#fff;border-radius:10px 10px 0px 0px;color:white;height:50px;background-color:#0a64f9;padding: 10px;">
+            <img src="https://ci6.googleusercontent.com/proxy/KMcbu8zrXoyWKSbPbnxVubGTx7PgYRs0S09MuME0p2pHSnUzhBCauFlLKn8LlYdveuxEOkeZehwgsghRc06WBSAvXg=s0-d-e1-ft#https://sandbox.quickvee.com/images/maillogo.png" width="120px">
+          </td>
+        </tr>
+    <tr>
+          <td valign="middle" align="center" style="padding-top:25px;padding-bottom:15px;text-align:center;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <span style="font-size:20px;color:#2d2d2d">Hello Test Quickvee</span>
+          </td>
+        </tr>        
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              We have received a request to reset the password for your account.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              To reset your password, please <a href="http://quickvee.com/changePassword?vc=NjY5YTU2NmQyOWIxYWUwYzQxOGMxZDEzODU2MjRlZjY6fDp2aXZla0BpbWVyY2hhbnRlY2guY29t" target=\"_blank\">click here</a>.
+            </div>
+          </td>
+        </tr>   
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 25px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:13px;color:#6d6d6d;font-weight:normal"><br><br>
+               If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+            </div>
+          </td>
+        </tr> 
+  </tbody></table>
+
+11:34:25.639 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:226)oggger - 
+11:34:25.640 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:227)oggger - Validate the Merchant is able to go forgot password page if he/she click on forgot password
+11:34:25.640 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:228)oggger - -----------------------
+11:34:25.757 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:231)oggger - User click on login button
+11:34:25.923 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:234)oggger - User click on merchant login button
+11:34:29.707 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:246)oggger - User click on forgot password button
+11:34:30.520 [main] INFO  testCases.testCases_ForgotPassword.directionURLMerchant(testCases_ForgotPassword.java:253)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:34:36.891 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:259)oggger - 
+11:34:36.891 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:260)oggger - Validate whether the Quickvee Logo, Forgot Password Text and "To reset your password, please enter your Email ID & follow the instructions." text is visible or not 
+11:34:36.891 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:262)oggger - -----------------------
+11:34:36.993 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:265)oggger - User click on login button
+11:34:37.103 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:268)oggger - User click on merchant login button
+11:34:41.305 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:280)oggger - User click on forgot password button
+11:34:42.411 [main] INFO  testCases.testCases_ForgotPassword.quickveeLogoAndTextDisplayedMerchant(testCases_ForgotPassword.java:289)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:34:53.550 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:34:53.550 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:34:53.550 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:34:53.685 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:34:53.806 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:34:57.942 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:35:12.372 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:35:12.374 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:35:12.374 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:35:12.501 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:35:12.607 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:35:16.487 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:35:30.854 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:373)oggger - 
+11:35:30.855 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:374)oggger - check whether if merchant is putting invalid format email then what happen
+11:35:30.855 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:375)oggger - -----------------------
+11:35:30.987 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:378)oggger - User click on login button
+11:35:31.133 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:381)oggger - User click on merchant login button
+11:35:37.025 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:393)oggger - User click on forgot password button
+11:35:54.346 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:411)oggger - 
+11:35:54.347 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:412)oggger - check whether if merchant is putting blank email then what happen
+11:35:54.347 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:413)oggger - -----------------------
+11:35:54.473 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:416)oggger - User click on login button
+11:35:54.611 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:419)oggger - User click on merchant login button
+11:35:59.166 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:431)oggger - User click on forgot password button
+11:36:08.621 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:449)oggger - 
+11:36:08.621 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:450)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:36:08.621 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:451)oggger - -----------------------
+11:36:08.720 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:454)oggger - User click on login button
+11:36:08.837 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:457)oggger - User click on merchant login button
+11:36:12.483 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:469)oggger - User click on forgot password button
+11:36:13.488 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:474)oggger - User click on submit button
+11:37:13.635 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:37:13.637 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:37:13.637 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:37:13.718 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:37:13.836 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:37:19.800 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:37:38.118 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:37:38.118 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:37:38.118 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:37:38.233 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:37:38.352 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:37:42.524 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:37:51.969 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:373)oggger - 
+11:37:51.969 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:374)oggger - check whether if merchant is putting invalid format email then what happen
+11:37:51.969 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:375)oggger - -----------------------
+11:37:52.079 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:378)oggger - User click on login button
+11:37:52.193 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:381)oggger - User click on merchant login button
+11:37:56.179 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:393)oggger - User click on forgot password button
+11:38:07.129 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:411)oggger - 
+11:38:07.129 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:412)oggger - check whether if merchant is putting blank email then what happen
+11:38:07.129 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:413)oggger - -----------------------
+11:38:07.266 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:416)oggger - User click on login button
+11:38:07.385 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:419)oggger - User click on merchant login button
+11:38:11.550 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:431)oggger - User click on forgot password button
+11:38:35.953 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:38:35.955 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:38:35.955 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:38:36.052 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:38:36.164 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:38:41.062 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:38:56.063 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:38:56.063 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:38:56.063 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:38:56.170 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:38:56.281 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:39:00.347 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:39:14.562 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:373)oggger - 
+11:39:14.562 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:374)oggger - check whether if merchant is putting invalid format email then what happen
+11:39:14.562 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:375)oggger - -----------------------
+11:39:14.663 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:378)oggger - User click on login button
+11:39:14.763 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:381)oggger - User click on merchant login button
+11:39:19.331 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:393)oggger - User click on forgot password button
+11:39:33.722 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:411)oggger - 
+11:39:33.723 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:412)oggger - check whether if merchant is putting blank email then what happen
+11:39:33.723 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:413)oggger - -----------------------
+11:39:33.831 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:416)oggger - User click on login button
+11:39:33.948 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:419)oggger - User click on merchant login button
+11:39:38.053 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:431)oggger - User click on forgot password button
+11:42:46.536 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:42:46.538 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:42:46.538 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:42:46.611 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:42:46.725 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:42:50.718 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:42:53.707 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:327)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:43:00.630 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:43:00.630 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:43:00.631 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:43:00.732 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:43:00.839 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:43:04.776 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:43:14.704 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:373)oggger - 
+11:43:14.704 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:374)oggger - check whether if merchant is putting invalid format email then what happen
+11:43:14.705 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:375)oggger - -----------------------
+11:43:14.806 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:378)oggger - User click on login button
+11:43:14.928 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:381)oggger - User click on merchant login button
+11:43:19.132 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:393)oggger - User click on forgot password button
+11:43:22.111 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:404)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:43:29.294 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:411)oggger - 
+11:43:29.294 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:412)oggger - check whether if merchant is putting blank email then what happen
+11:43:29.295 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:413)oggger - -----------------------
+11:43:29.396 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:416)oggger - User click on login button
+11:43:29.516 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:419)oggger - User click on merchant login button
+11:43:33.348 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:431)oggger - User click on forgot password button
+11:43:36.300 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:442)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:43:42.650 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:449)oggger - 
+11:43:42.650 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:450)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:43:42.650 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:451)oggger - -----------------------
+11:43:42.776 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:454)oggger - User click on login button
+11:43:42.879 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:457)oggger - User click on merchant login button
+11:43:47.748 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:469)oggger - User click on forgot password button
+11:43:48.737 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:474)oggger - User click on submit button
+11:44:17.217 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:494)oggger - 
+11:44:17.217 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:495)oggger - Check whether the email contains proper title and body or not
+11:44:17.217 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:496)oggger - -----------------------
+11:44:22.869 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:504)oggger - 📧 Email Subject: Reset Password
+11:44:22.869 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:505)oggger - 📄 Email Body:
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:auto;border-spacing:0;border-collapse:collapse;background:#f6f6f6;border-radius:0px 0px 10px 10px">
+  <tbody>
+    <tr style="background-size:cover">
+          <td style="text-align:center;border-collapse:collapse;background:#fff;border-radius:10px 10px 0px 0px;color:white;height:50px;background-color:#0a64f9;padding: 10px;">
+            <img src="https://ci6.googleusercontent.com/proxy/KMcbu8zrXoyWKSbPbnxVubGTx7PgYRs0S09MuME0p2pHSnUzhBCauFlLKn8LlYdveuxEOkeZehwgsghRc06WBSAvXg=s0-d-e1-ft#https://sandbox.quickvee.com/images/maillogo.png" width="120px">
+          </td>
+        </tr>
+    <tr>
+          <td valign="middle" align="center" style="padding-top:25px;padding-bottom:15px;text-align:center;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <span style="font-size:20px;color:#2d2d2d">Hello Chain Smoker</span>
+          </td>
+        </tr>        
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              We have received a request to reset the password for your account.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              To reset your password, please <a href="https://quickvee.com/changePassword?vc=MzRkM2UxYjFkY2JlOGM2NTlkOTE5NjgzNzY2M2Q0MzY6fDp2aXZlay5kdWJleTUyMUBnbWFpbC5jb20=" target=\"_blank\">click here</a>.
+            </div>
+          </td>
+        </tr>   
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 25px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:13px;color:#6d6d6d;font-weight:normal"><br><br>
+               If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+            </div>
+          </td>
+        </tr> 
+  </tbody></table>
+
+11:47:04.890 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:295)oggger - 
+11:47:04.892 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:296)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:47:04.893 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:298)oggger - -----------------------
+11:47:04.977 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:301)oggger - User click on login button
+11:47:05.104 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:304)oggger - User click on merchant login button
+11:47:10.098 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:316)oggger - User click on forgot password button
+11:47:13.106 [main] INFO  testCases.testCases_ForgotPassword.emailSentMessageMerchant(testCases_ForgotPassword.java:327)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:47:28.351 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:334)oggger - 
+11:47:28.351 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:335)oggger - check whether if merchant is putting the invalid email id then the success message is coming or not
+11:47:28.351 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:337)oggger - -----------------------
+11:47:28.475 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:340)oggger - User click on login button
+11:47:28.579 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:343)oggger - User click on merchant login button
+11:47:32.900 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:355)oggger - User click on forgot password button
+11:47:36.670 [main] INFO  testCases.testCases_ForgotPassword.emailErrorMessageMerchant(testCases_ForgotPassword.java:366)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:48:03.065 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:373)oggger - 
+11:48:03.066 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:374)oggger - check whether if merchant is putting invalid format email then what happen
+11:48:03.066 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:375)oggger - -----------------------
+11:48:03.185 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:378)oggger - User click on login button
+11:48:03.302 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:381)oggger - User click on merchant login button
+11:48:07.279 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:393)oggger - User click on forgot password button
+11:48:10.268 [main] INFO  testCases.testCases_ForgotPassword.invalidEmailFormatMerchant(testCases_ForgotPassword.java:404)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:48:21.239 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:411)oggger - 
+11:48:21.239 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:412)oggger - check whether if merchant is putting blank email then what happen
+11:48:21.239 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:413)oggger - -----------------------
+11:48:21.342 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:416)oggger - User click on login button
+11:48:21.457 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:419)oggger - User click on merchant login button
+11:48:25.499 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:431)oggger - User click on forgot password button
+11:48:28.442 [main] INFO  testCases.testCases_ForgotPassword.blankEmailMerchant(testCases_ForgotPassword.java:442)oggger - User is on https://www.quickvee.com/merchants/forgot-password url
+11:48:40.524 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:449)oggger - 
+11:48:40.525 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:450)oggger - check whether if we put proper email and submit the button the Email Send, Please check your Email this message is displayed or not
+11:48:40.525 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:451)oggger - -----------------------
+11:48:40.640 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:454)oggger - User click on login button
+11:48:40.775 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:457)oggger - User click on merchant login button
+11:48:44.790 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:469)oggger - User click on forgot password button
+11:48:45.754 [main] INFO  testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmailMerchant(testCases_ForgotPassword.java:474)oggger - User click on submit button
+11:49:25.685 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:494)oggger - 
+11:49:25.685 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:495)oggger - Check whether the email contains proper title and body or not
+11:49:25.686 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:496)oggger - -----------------------
+11:49:31.357 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:504)oggger - 📧 Email Subject: Reset Password
+11:49:31.357 [main] INFO  testCases.testCases_ForgotPassword.validateResetEmailTitleAndBodyMerchant(testCases_ForgotPassword.java:505)oggger - 📄 Email Body:
+<table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width:600px;margin:auto;border-spacing:0;border-collapse:collapse;background:#f6f6f6;border-radius:0px 0px 10px 10px">
+  <tbody>
+    <tr style="background-size:cover">
+          <td style="text-align:center;border-collapse:collapse;background:#fff;border-radius:10px 10px 0px 0px;color:white;height:50px;background-color:#0a64f9;padding: 10px;">
+            <img src="https://ci6.googleusercontent.com/proxy/KMcbu8zrXoyWKSbPbnxVubGTx7PgYRs0S09MuME0p2pHSnUzhBCauFlLKn8LlYdveuxEOkeZehwgsghRc06WBSAvXg=s0-d-e1-ft#https://sandbox.quickvee.com/images/maillogo.png" width="120px">
+          </td>
+        </tr>
+    <tr>
+          <td valign="middle" align="center" style="padding-top:25px;padding-bottom:15px;text-align:center;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <span style="font-size:20px;color:#2d2d2d">Hello Chain Smoker</span>
+          </td>
+        </tr>        
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              We have received a request to reset the password for your account.
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 10px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:16px;color:#6d6d6d;font-weight:normal">
+              To reset your password, please <a href="https://quickvee.com/changePassword?vc=ZTY2MTcwNWYxMjRkNDRiYjI4NDQ4MjE2NjllN2QzYzg6fDp2aXZlay5kdWJleTUyMUBnbWFpbC5jb20=" target=\"_blank\">click here</a>.
+            </div>
+          </td>
+        </tr>   
+        <tr>
+          <td valign="middle" align="center" style="padding:10px 25px 25px 25px;text-align:center;border-collapse:collapse;font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;">
+            <div style="font-size:13px;color:#6d6d6d;font-weight:normal"><br><br>
+               If you did not request your password to be reset, please ignore this email and your password will stay as it is.
+            </div>
+          </td>
+        </tr> 
+  </tbody></table>
+

@@ -1,60 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-14T16:16:10 IST" name="Default suite" finished-at="2025-07-14T16:51:44 IST" duration-ms="2134603">
+  <suite started-at="2025-07-15T11:46:58 IST" name="Default suite" finished-at="2025-07-15T11:49:31 IST" duration-ms="153767">
     <groups>
     </groups>
-    <test started-at="2025-07-14T16:16:10 IST" name="Default test" finished-at="2025-07-14T16:51:44 IST" duration-ms="2134603">
+    <test started-at="2025-07-15T11:46:58 IST" name="Default test" finished-at="2025-07-15T11:49:31 IST" duration-ms="153767">
       <class name="testCases.testCases_ForgotPassword">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@5e0e82ae]" started-at="2025-07-14T16:16:10 IST" name="setUp" finished-at="2025-07-14T16:16:17 IST" duration-ms="7165" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:46:58 IST" name="setUp" finished-at="2025-07-15T11:47:04 IST" duration-ms="6634" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validateResetLinkReceivedInEmail()[pri:1, instance:testCases.testCases_ForgotPassword@5e0e82ae]" started-at="2025-07-14T16:16:17 IST" name="validateResetLinkReceivedInEmail" finished-at="2025-07-14T16:51:44 IST" duration-ms="2126751" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected object to not be null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected object to not be null
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.assertNotNull(Assert.java:1496)
-at org.testng.Assert.assertNotNull(Assert.java:1480)
-at testCases.testCases_ForgotPassword.validateResetLinkReceivedInEmail(testCases_ForgotPassword.java:186)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="emailSentMessageMerchant()[pri:11, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:04 IST" name="emailSentMessageMerchant" finished-at="2025-07-15T11:47:13 IST" duration-ms="8225" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateResetLinkReceivedInEmail -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@5e0e82ae]" started-at="2025-07-14T16:51:44 IST" name="tearDown" finished-at="2025-07-14T16:51:44 IST" duration-ms="654" status="PASS">
+        </test-method> <!-- emailSentMessageMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:13 IST" name="tearDown" finished-at="2025-07-15T11:47:13 IST" duration-ms="637" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:13 IST" name="setUp" finished-at="2025-07-15T11:47:28 IST" duration-ms="14603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="emailErrorMessageMerchant()[pri:12, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:28 IST" name="emailErrorMessageMerchant" finished-at="2025-07-15T11:47:36 IST" duration-ms="8320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emailErrorMessageMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:36 IST" name="tearDown" finished-at="2025-07-15T11:47:37 IST" duration-ms="624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:47:37 IST" name="setUp" finished-at="2025-07-15T11:48:03 IST" duration-ms="25767" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="invalidEmailFormatMerchant()[pri:13, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:03 IST" name="invalidEmailFormatMerchant" finished-at="2025-07-15T11:48:10 IST" duration-ms="7204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidEmailFormatMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:10 IST" name="tearDown" finished-at="2025-07-15T11:48:10 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:10 IST" name="setUp" finished-at="2025-07-15T11:48:21 IST" duration-ms="10317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="blankEmailMerchant()[pri:14, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:21 IST" name="blankEmailMerchant" finished-at="2025-07-15T11:48:28 IST" duration-ms="7206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmailMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:28 IST" name="tearDown" finished-at="2025-07-15T11:48:29 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:29 IST" name="setUp" finished-at="2025-07-15T11:48:40 IST" duration-ms="11447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateResetLinkReceivedInEmailMerchant()[pri:15, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:48:40 IST" name="validateResetLinkReceivedInEmailMerchant" finished-at="2025-07-15T11:49:06 IST" duration-ms="26094" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResetLinkReceivedInEmailMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:49:06 IST" name="tearDown" finished-at="2025-07-15T11:49:07 IST" duration-ms="641" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:49:07 IST" name="setUp" finished-at="2025-07-15T11:49:25 IST" duration-ms="18423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateResetEmailTitleAndBodyMerchant()[pri:16, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:49:25 IST" name="validateResetEmailTitleAndBodyMerchant" finished-at="2025-07-15T11:49:31 IST" duration-ms="5673" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateResetEmailTitleAndBodyMerchant -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.testCases_ForgotPassword@3754a4bf]" started-at="2025-07-15T11:49:31 IST" name="tearDown" finished-at="2025-07-15T11:49:31 IST" duration-ms="629" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
