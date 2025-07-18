@@ -11,8 +11,10 @@ public class Routes {
 	//Admin Login API
 	public static String urlAdminLogin = base_Url+"/LoginApiReact/create_session_pk";
 	
-	//DashBoard
+	//DashBoard Revenue
 	public static String urlDashBoardRevenue = base_Url+"/ReportingReactapi/revenue_data_api";
 	
-	
+	//DashBoard Revenue view report
+	public static String urlDashBoardRevenueViewReport = base_Url+"/ReportingReactapi/revenue_data_outlet_report";
+
 }

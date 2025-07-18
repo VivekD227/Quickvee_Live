@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-18T11:40:24 IST" name="Default suite" finished-at="2025-07-18T11:40:28 IST" duration-ms="4715">
+  <suite started-at="2025-07-18T14:13:18 IST" name="Default suite" finished-at="2025-07-18T14:13:24 IST" duration-ms="6062">
     <groups>
     </groups>
-    <test started-at="2025-07-18T11:40:24 IST" name="Default test" finished-at="2025-07-18T11:40:28 IST" duration-ms="4715">
+    <test started-at="2025-07-18T14:13:18 IST" name="Default test" finished-at="2025-07-18T14:13:24 IST" duration-ms="6062">
       <class name="api.testCases.TestCase_AdminLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T11:40:24 IST" name="setUp" finished-at="2025-07-18T11:40:24 IST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T14:13:18 IST" name="setUp" finished-at="2025-07-18T14:13:18 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="LoginAdmin()[pri:1, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T11:40:24 IST" name="LoginAdmin" finished-at="2025-07-18T11:40:28 IST" duration-ms="4673" status="PASS">
+        <test-method signature="LoginAdmin()[pri:1, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T14:13:18 IST" name="LoginAdmin" finished-at="2025-07-18T14:13:24 IST" duration-ms="6022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAdmin -->
