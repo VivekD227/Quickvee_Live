@@ -43,7 +43,6 @@ public class validCustomerRegister {
 		response.then().log().all();
 
 		Assert.assertEquals(response.getStatusCode(), 200);
-	    Assert.assertEquals(response.getStatusCode(), 200);
 
 	    int status = response.jsonPath().getInt("status");
 	    String message = response.jsonPath().getString("message");
