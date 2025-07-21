@@ -12,7 +12,7 @@ import api.payLoad.newCustomerPayload;
 import api.utilities.commonFuntion;
 import io.restassured.response.Response;
 
-public class validCustomerRegister {
+public class TestCase_ValidCustomerRegister {
 
 	public newCustomerPayload newRegister;
 	public Properties p;

@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-18T14:13:18 IST" name="Default suite" finished-at="2025-07-18T14:13:24 IST" duration-ms="6062">
+  <suite started-at="2025-07-21T16:29:18 IST" name="Default suite" finished-at="2025-07-21T16:29:27 IST" duration-ms="8921">
     <groups>
     </groups>
-    <test started-at="2025-07-18T14:13:18 IST" name="Default test" finished-at="2025-07-18T14:13:24 IST" duration-ms="6062">
-      <class name="api.testCases.TestCase_AdminLogin">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T14:13:18 IST" name="setUp" finished-at="2025-07-18T14:13:18 IST" duration-ms="8" status="PASS">
+    <test started-at="2025-07-21T16:29:18 IST" name="Default test" finished-at="2025-07-21T16:29:27 IST" duration-ms="8921">
+      <class name="api.testCases.TestCase_DashBoardRevenueViewReport">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.testCases.TestCase_DashBoardRevenueViewReport@279fedbd]" started-at="2025-07-21T16:29:18 IST" name="setup" finished-at="2025-07-21T16:29:18 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="LoginAdmin()[pri:1, instance:api.testCases.TestCase_AdminLogin@279fedbd]" started-at="2025-07-18T14:13:18 IST" name="LoginAdmin" finished-at="2025-07-18T14:13:24 IST" duration-ms="6022" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="RevenueReportDashBoard()[pri:1, instance:api.testCases.TestCase_DashBoardRevenueViewReport@279fedbd]" started-at="2025-07-21T16:29:18 IST" name="RevenueReportDashBoard" finished-at="2025-07-21T16:29:27 IST" duration-ms="8881" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginAdmin -->
-      </class> <!-- api.testCases.TestCase_AdminLogin -->
+        </test-method> <!-- RevenueReportDashBoard -->
+      </class> <!-- api.testCases.TestCase_DashBoardRevenueViewReport -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

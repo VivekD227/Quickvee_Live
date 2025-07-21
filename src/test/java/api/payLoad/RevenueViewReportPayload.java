@@ -1,6 +1,6 @@
 package api.payLoad;
 
-public class RevenueviewReportPayload {
+public class RevenueViewReportPayload {
 	
 	private String merchant_id;
 	private String date_range;
