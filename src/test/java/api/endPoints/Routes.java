@@ -17,4 +17,10 @@ public class Routes {
 	//DashBoard Revenue view report
 	public static String urlDashBoardRevenueViewReport = base_Url+"/ReportingReactapi/revenue_data_outlet_report";
 
+	//DashBoard Total Transaction
+	public static String urlDashBoardSaleCount = base_Url+"/NewDashboardReact/sales_count_api";
+
+	//DashBoard Sale Count Report
+	public static String urlDashBoardSaleCountViewReport = base_Url+"/NewDashboardReact/store_sales_count_api";
+
 }
