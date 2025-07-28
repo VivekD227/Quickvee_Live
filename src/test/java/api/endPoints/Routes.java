@@ -28,4 +28,11 @@ public class Routes {
 
 	//DashBoard Unique Customer view report
 	public static String urlDashBoardCustomerCountReport = base_Url+"/ReportingReactapi/customer_count_store_report";
+	
+	//DashBoard profit generated
+	public static String urlDashBoardProfitGenerated = base_Url+"/NewDashboardReact/gross_profit_api";
+
+	//DashBoard profit generated view report
+	public static String urlDashBoardProfitGenerateReport = base_Url+"/NewDashboardReact/store_gross_profit_api";
+
 }
