@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-22T15:37:15 IST" name="Default suite" finished-at="2025-07-22T15:37:18 IST" duration-ms="2982">
+  <suite started-at="2025-07-28T10:16:41 IST" name="Default suite" finished-at="2025-07-28T10:16:44 IST" duration-ms="3085">
     <groups>
     </groups>
-    <test started-at="2025-07-22T15:37:15 IST" name="Default test" finished-at="2025-07-22T15:37:18 IST" duration-ms="2982">
-      <class name="api.testCases.TestCase_DashBoardSaleCountViewReport">
-        <test-method is-config="true" signature="setup()[pri:0, instance:api.testCases.TestCase_DashBoardSaleCountViewReport@279fedbd]" started-at="2025-07-22T15:37:15 IST" name="setup" finished-at="2025-07-22T15:37:15 IST" duration-ms="7" status="PASS">
+    <test started-at="2025-07-28T10:16:41 IST" name="Default test" finished-at="2025-07-28T10:16:44 IST" duration-ms="3085">
+      <class name="api.testCases.TestCase_DashBoardRevenue">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.testCases.TestCase_DashBoardRevenue@279fedbd]" started-at="2025-07-28T10:16:41 IST" name="setup" finished-at="2025-07-28T10:16:41 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="saleCountViewReportDashBoard()[pri:1, instance:api.testCases.TestCase_DashBoardSaleCountViewReport@279fedbd]" started-at="2025-07-22T15:37:15 IST" name="saleCountViewReportDashBoard" finished-at="2025-07-22T15:37:18 IST" duration-ms="2943" status="PASS">
+        <test-method signature="RevenueDashBoard()[pri:1, instance:api.testCases.TestCase_DashBoardRevenue@279fedbd]" started-at="2025-07-28T10:16:41 IST" name="RevenueDashBoard" finished-at="2025-07-28T10:16:44 IST" duration-ms="3039" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- saleCountViewReportDashBoard -->
-      </class> <!-- api.testCases.TestCase_DashBoardSaleCountViewReport -->
+        </test-method> <!-- RevenueDashBoard -->
+      </class> <!-- api.testCases.TestCase_DashBoardRevenue -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

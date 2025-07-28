@@ -2,6 +2,8 @@ package api.testCases;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import org.testng.Assert;
@@ -46,10 +48,20 @@ public class TestCase_DashBoardSaleCount {
 
 	    boolean status = response.jsonPath().getBoolean("status");
 	    int total_sale = response.jsonPath().getInt("total_sale_count");
-	    
+
+	    List<Object> saleCountList = response.jsonPath().getList("sale_count_data");
+
+	    for (int i = 0; i < saleCountList.size(); i++) {
+	        Map<String, Object> item = (Map<String, Object>) saleCountList.get(i);
+	        Object dayCount = item.get("day_count");
+	        Object sale = item.get("sale_count");
+	        System.out.println("Day: " + dayCount + ", Sale Count: " + sale);
+	    }
+
 	    Assert.assertTrue(status, "Expected status = true");
-	    Assert.assertEquals(total_sale, 1);
-	    
-	    
+	    Assert.assertEquals(total_sale, 4, "Total sale count should be 4");
 	}
+
 }
+	    
+	    

@@ -2,10 +2,13 @@ package api.testCases;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.List;
+import java.util.Map;
 import java.util.Properties;
 
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import api.endPoints.DashBoardRevenueEndPoints;
 import api.payLoad.DashBoardRevenuePayload;
@@ -45,9 +48,21 @@ public class TestCase_DashBoardRevenue {
 
 	    boolean status = response.jsonPath().getBoolean("status");
 	    String total_revenue = response.jsonPath().getString("total_revenue_data");
-
 	    Assert.assertTrue(status, "Expected status = true");
 	    System.out.println("Total Revenue: " + total_revenue);
+	    
+	 
+	    List<Object> filterrevenueData = response.jsonPath().getList("filter_revenue_data");
+	    
+	    for(int i = 0; i < filterrevenueData.size(); i++) {
+	    	Map<String, Object> item = (Map<String, Object>) filterrevenueData.get(i);
+	    	Object day_count = item.get("day_count");
+	    	Object total_revenues = item.get("total_revenue");
+	    	
+	        System.out.println("Day: " + day_count + ", Revenue: " + total_revenues);	    	
+	    }
+
+	  
 	}
 
 }
