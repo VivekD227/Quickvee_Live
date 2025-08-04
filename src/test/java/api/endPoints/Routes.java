@@ -35,4 +35,10 @@ public class Routes {
 	//DashBoard profit generated view report
 	public static String urlDashBoardProfitGenerateReport = base_Url+"/NewDashboardReact/store_gross_profit_api";
 
+	//DashBoard average order value report
+	public static String urlDashBoardAvgOrderValue = base_Url+"/DashboardReactApi/avg_sale_value";
+
+	//DashBoard average order value view report
+	public static String urlDashBoardAvgOrderValueViewReport = base_Url+"/DashboardReactApi/avg_sale_value_report";
+
 }

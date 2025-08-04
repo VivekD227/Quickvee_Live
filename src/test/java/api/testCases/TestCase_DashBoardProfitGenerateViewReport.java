@@ -14,7 +14,7 @@ import api.endPoints.DashBoardProfitGenerateViewReportEndPoints;
 import api.payLoad.DashBoardProfitGenerateViewReportPayload;
 import io.restassured.response.Response;
 
-public class TestCase_ProfitGenerateViewReport {
+public class TestCase_DashBoardProfitGenerateViewReport {
 
 	public DashBoardProfitGenerateViewReportPayload dashBoard_profitGenerate;
 	public Properties p;
@@ -48,16 +48,24 @@ public class TestCase_ProfitGenerateViewReport {
 		boolean status = response.jsonPath().getBoolean("status");
 
 		Assert.assertTrue(status, "Expected status = true");
-
+		boolean found = false;
+		
 		List<Object> filterDate = response.jsonPath().getList("filter_revenue_data");
 		int storeCount = filterDate.size();
-		System.out.println(storeCount);
+		//System.out.println(storeCount);
 		for (int i = 0; i < storeCount; i++) {
+
 			Map<String, Object> item = (Map<String, Object>) filterDate.get(i);
 			String store = (String) item.get("store_name");
-			List<String> revenue = (List<String>) item.get("revenue_by_day");
+			if (store.equalsIgnoreCase("Chain Smoker")) {
+				found = true;
+				List<Object> revenue = (List<Object>)item.get("revenue_by_day");
 
-			System.out.println("Store Name: " + store + " Revenue: " + revenue);
+				System.out.println("Store Name: " + store + " Revenue: " + revenue);
+				System.out.println("Revenue: "+ revenue.get(0));
+
+				break;
+			}
 		}
 	}
 }
