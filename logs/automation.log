@@ -1800,3 +1800,557 @@
         </tr> 
   </tbody></table>
 
+09:58:59.670 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:19)oggger - 
+09:58:59.676 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:20)oggger - validate whether the merchant is going in proper page after clicking on merchant login or not
+09:58:59.678 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:21)oggger - -----------------------
+09:59:40.995 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:19)oggger - 
+09:59:41.002 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:20)oggger - validate whether the merchant is going in proper page after clicking on merchant login or not
+09:59:41.002 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:21)oggger - -----------------------
+09:59:41.184 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:24)oggger - User click on login button
+09:59:51.860 [main] INFO  testCases.testCases_MerchantLogin.validatingCorrectPage(testCases_MerchantLogin.java:24)oggger - User click on login button
+10:00:13.653 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:49)oggger - 
+10:00:13.654 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:50)oggger - Validate whether the quickvee logo is displayed or not
+10:00:13.654 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:51)oggger - -----------------------
+10:00:13.816 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:54)oggger - User click on login button
+10:00:25.418 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:49)oggger - 
+10:00:25.418 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:50)oggger - Validate whether the quickvee logo is displayed or not
+10:00:25.418 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:51)oggger - -----------------------
+10:00:25.586 [main] INFO  testCases.testCases_MerchantLogin.quickveeLogoDisplay(testCases_MerchantLogin.java:54)oggger - User click on login button
+10:00:51.990 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:81)oggger - 
+10:00:51.991 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:82)oggger - Validate logging into the Application using valid credentials
+10:00:51.991 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:83)oggger - -----------------------
+10:00:52.221 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:86)oggger - User click on login button
+10:01:07.562 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:81)oggger - 
+10:01:07.564 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:82)oggger - Validate logging into the Application using valid credentials
+10:01:07.564 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:83)oggger - -----------------------
+10:01:07.749 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:86)oggger - User click on login button
+10:01:18.286 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:129)oggger - 
+10:01:18.288 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:130)oggger - Validate logging into the Application using invalid credentials (i.e. Invalid storename, Invalid email address and Invalid Password)
+10:01:18.288 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:132)oggger - -----------------------
+10:01:18.451 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:135)oggger - User click on login button
+10:01:40.836 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:129)oggger - 
+10:01:40.836 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:130)oggger - Validate logging into the Application using invalid credentials (i.e. Invalid storename, Invalid email address and Invalid Password)
+10:01:40.839 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:132)oggger - -----------------------
+10:01:41.051 [main] INFO  testCases.testCases_MerchantLogin.loginInValidCredential(testCases_MerchantLogin.java:135)oggger - User click on login button
+10:02:05.073 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:186)oggger - 
+10:02:05.073 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:187)oggger - Verify logging into the Application using invalid email address and valid Password, valid storeName)
+10:02:05.075 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:189)oggger - -----------------------
+10:02:05.269 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:192)oggger - User click on login button
+10:02:09.908 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:186)oggger - 
+10:02:09.908 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:187)oggger - Verify logging into the Application using invalid email address and valid Password, valid storeName)
+10:02:09.908 [main] INFO  testCases.testCases_MerchantLogin.invalidEmail(testCases_MerchantLogin.java:189)oggger - -----------------------
+10:02:11.771 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:243)oggger - 
+10:02:11.771 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:244)oggger - Validate logging into the Application using valid email address and invalid Password and valid Storename)
+10:02:11.772 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:246)oggger - -----------------------
+10:02:16.262 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:296)oggger - 
+10:02:16.265 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:297)oggger - Validate logging into the Application using valid email address and valid Password and Invalid Storename)
+10:02:16.265 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:299)oggger - -----------------------
+10:02:19.555 [main] INFO  testCases.testCases_MerchantLogin.invalidStorenamePassword(testCases_MerchantLogin.java:350)oggger - 
+10:02:19.555 [main] INFO  testCases.testCases_MerchantLogin.invalidStorenamePassword(testCases_MerchantLogin.java:351)oggger - Validate logging into the Application using valid email address and Invalid Password and Invalid Storename)
+10:02:19.555 [main] INFO  testCases.testCases_MerchantLogin.invalidStorenamePassword(testCases_MerchantLogin.java:353)oggger - -----------------------
+10:02:39.029 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:243)oggger - 
+10:02:39.031 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:244)oggger - Validate logging into the Application using valid email address and invalid Password and valid Storename)
+10:02:39.032 [main] INFO  testCases.testCases_MerchantLogin.invalidPassword(testCases_MerchantLogin.java:246)oggger - -----------------------
+10:02:52.284 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:296)oggger - 
+10:02:52.287 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:297)oggger - Validate logging into the Application using valid email address and valid Password and Invalid Storename)
+10:02:52.290 [main] INFO  testCases.testCases_MerchantLogin.invalidStorename(testCases_MerchantLogin.java:299)oggger - -----------------------
+05:21:03.256 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:19)oggger - 
+05:21:03.269 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - Validate whether the quickvee logo is displayed or not
+05:21:03.269 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - -----------------------
+05:21:04.196 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:25)oggger - User is on https://quickvee.com/merchants/login url
+05:21:04.196 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:27)oggger - 
+05:21:04.196 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - Login with valid merchant credentials
+05:21:04.198 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - -----------------------
+05:21:04.529 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:33)oggger - Store Name: chain
+05:21:04.909 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:37)oggger - User Name: vivek.dubey521@gmail.com
+05:21:05.191 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:41)oggger - Password: Quickvee123!
+05:21:05.341 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:44)oggger - User click on login button to enter in merchant login
+05:23:01.382 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:19)oggger - 
+05:23:01.389 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - Validate whether the quickvee logo is displayed or not
+05:23:01.389 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - -----------------------
+05:23:02.306 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:25)oggger - User is on https://quickvee.com/merchants/login url
+05:23:02.306 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:27)oggger - 
+05:23:02.306 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - Login with valid merchant credentials
+05:23:02.306 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - -----------------------
+05:23:02.629 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:33)oggger - Store Name: chain
+05:23:03.024 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:37)oggger - User Name: vivek.dubey521@gmail.com
+05:23:03.298 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:41)oggger - Password: Quickvee123!
+05:23:03.472 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:44)oggger - User click on login button to enter in merchant login
+05:23:10.498 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:52)oggger - User is on https://quickvee.com/merchants/dashboard url
+05:25:13.796 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:19)oggger - 
+05:25:13.802 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - Validate whether the quickvee logo is displayed or not
+05:25:13.802 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - -----------------------
+05:25:14.900 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:25)oggger - User is on https://quickvee.com/merchants/login url
+05:25:14.900 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:27)oggger - 
+05:25:14.900 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - Login with valid merchant credentials
+05:25:14.903 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - -----------------------
+05:25:15.261 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:33)oggger - Store Name: chain
+05:25:15.719 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:37)oggger - User Name: vivek.dubey521@gmail.com
+05:25:16.024 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:41)oggger - Password: Quickvee123!
+05:25:16.217 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:44)oggger - User click on login button to enter in merchant login
+05:33:59.959 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+05:33:59.959 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+05:33:59.959 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+05:34:00.910 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+05:34:00.910 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+05:34:00.910 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+05:34:00.910 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+05:34:01.261 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+05:34:01.666 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+05:34:01.959 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+05:34:02.117 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+05:34:06.751 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+07:52:59.256 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+07:52:59.256 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+07:52:59.256 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+07:53:00.230 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+07:53:00.230 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+07:53:00.230 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+07:53:00.230 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+07:53:00.533 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+07:53:00.940 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+07:53:01.217 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+07:53:01.387 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+07:53:42.964 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+07:53:42.973 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+07:53:42.973 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+07:53:43.963 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+07:53:43.963 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+07:53:43.963 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+07:53:43.963 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+07:53:44.255 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+07:53:44.664 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+07:53:44.951 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+07:53:45.112 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+07:53:50.002 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+07:56:32.748 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+07:56:32.748 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+07:56:32.748 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+07:56:34.346 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+07:56:34.346 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+07:56:34.346 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+07:56:34.348 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+07:56:34.650 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+07:56:35.069 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+07:56:35.370 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+07:56:35.537 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+07:56:43.652 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:07:53.432 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+08:07:53.440 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+08:07:53.441 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+08:07:54.483 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+08:07:54.483 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+08:07:54.483 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+08:07:54.485 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+08:07:54.836 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+08:07:55.307 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+08:07:55.648 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+08:07:55.868 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+08:08:02.934 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:08:17.434 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+08:08:17.447 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+08:08:17.447 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+08:08:22.925 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+08:08:22.925 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+08:08:22.925 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+08:08:22.925 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+08:08:23.222 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+08:08:23.632 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+08:08:23.934 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+08:08:24.098 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+08:08:35.489 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:08:57.384 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - 
+08:08:57.389 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - Validate whether the quickvee logo is displayed or not
+08:08:57.389 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:22)oggger - -----------------------
+08:08:58.384 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:26)oggger - User is on https://quickvee.com/merchants/login url
+08:08:58.387 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - 
+08:08:58.387 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - Login with valid merchant credentials
+08:08:58.387 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:30)oggger - -----------------------
+08:08:58.752 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:34)oggger - Store Name: chain
+08:08:59.236 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:38)oggger - User Name: vivek.dubey521@gmail.com
+08:08:59.551 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:42)oggger - Password: Quickvee123!
+08:08:59.744 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:45)oggger - User click on login button to enter in merchant login
+08:09:03.657 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:49)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:45:41.357 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:19)oggger - 
+08:45:41.361 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - Validate whether the quickvee logo is displayed or not
+08:45:41.361 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - -----------------------
+08:45:42.357 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:25)oggger - User is on https://quickvee.com/merchants/login url
+08:45:42.357 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:27)oggger - 
+08:45:42.357 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - Login with valid merchant credentials
+08:45:42.357 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - -----------------------
+08:45:42.699 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:33)oggger - Store Name: chain
+08:45:43.130 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:37)oggger - User Name: vivek.dubey521@gmail.com
+08:45:43.421 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:41)oggger - Password: Quickvee123!
+08:45:43.610 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:44)oggger - User click on login button to enter in merchant login
+08:45:50.664 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:48)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:46:16.247 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:61)oggger - 
+08:46:16.248 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:62)oggger - Login with valid employee credentials
+08:46:16.248 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:63)oggger - -----------------------
+08:46:16.980 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:67)oggger - Store Name: Chain
+08:46:17.288 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:71)oggger - User Name: vivek@gmail.com
+08:46:17.558 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:75)oggger - Password: Vivek@123
+08:46:17.709 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:78)oggger - User click on login button to enter in employee login
+08:46:28.351 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:82)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:46:42.791 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+08:46:42.791 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+08:46:42.795 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+08:46:43.461 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+08:46:43.830 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+08:46:44.090 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+08:46:44.268 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+08:46:51.763 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:125)oggger - 
+08:46:51.763 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:126)oggger - Login with invalid username
+08:46:51.763 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:127)oggger - -----------------------
+08:46:52.433 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:131)oggger - Store Name: Chain
+08:46:52.766 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:135)oggger - User Name: vivek12@gmail.com
+08:46:53.020 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:139)oggger - Password: Vivek@123
+08:46:53.177 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:142)oggger - User click on login button to enter in employee login
+08:47:02.332 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:161)oggger - 
+08:47:02.334 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:162)oggger - Login with invalid store name
+08:47:02.334 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:163)oggger - -----------------------
+08:47:03.306 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:167)oggger - Store Name: Chains
+08:47:03.626 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:171)oggger - User Name: vivek@gmail.com
+08:47:03.904 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:175)oggger - Password: Vivek@123
+08:47:04.051 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:178)oggger - User click on login button to enter in employee login
+08:47:15.488 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:193)oggger - 
+08:47:15.488 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:194)oggger - Login with empty fields
+08:47:15.490 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:195)oggger - -----------------------
+08:47:16.320 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:199)oggger - Store Name: 
+08:47:16.548 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:203)oggger - User Name: 
+08:47:16.734 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:207)oggger - Password: 
+08:47:16.886 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:210)oggger - User click on login button to enter in employee login
+08:47:43.021 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:19)oggger - 
+08:47:43.034 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:20)oggger - Validate whether the quickvee logo is displayed or not
+08:47:43.034 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:21)oggger - -----------------------
+08:47:44.231 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:25)oggger - User is on https://quickvee.com/merchants/login url
+08:47:44.231 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:27)oggger - 
+08:47:44.231 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:28)oggger - Login with valid merchant credentials
+08:47:44.231 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:29)oggger - -----------------------
+08:47:44.537 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:33)oggger - Store Name: chain
+08:47:44.956 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:37)oggger - User Name: vivek.dubey521@gmail.com
+08:47:45.260 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:41)oggger - Password: Quickvee123!
+08:47:45.420 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:44)oggger - User click on login button to enter in merchant login
+08:47:50.806 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential(testCases_MerchantLogin.java:48)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:48:03.546 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:61)oggger - 
+08:48:03.548 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:62)oggger - Login with valid employee credentials
+08:48:03.548 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:63)oggger - -----------------------
+08:48:04.817 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:67)oggger - Store Name: Chain
+08:48:05.132 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:71)oggger - User Name: vivek@gmail.com
+08:48:05.389 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:75)oggger - Password: Vivek@123
+08:48:05.549 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:78)oggger - User click on login button to enter in employee login
+08:48:09.703 [main] INFO  testCases.testCases_MerchantLogin.loginValidEmployeeCredential(testCases_MerchantLogin.java:82)oggger - User is on https://quickvee.com/merchants/dashboard url
+08:48:21.299 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+08:48:21.299 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+08:48:21.299 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+08:48:22.020 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+08:48:22.319 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+08:48:22.582 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+08:48:22.755 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+08:48:26.191 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:125)oggger - 
+08:48:26.192 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:126)oggger - Login with invalid username
+08:48:26.192 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:127)oggger - -----------------------
+08:48:30.381 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:131)oggger - Store Name: Chain
+08:48:30.737 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:135)oggger - User Name: vivek12@gmail.com
+08:48:30.986 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:139)oggger - Password: Vivek@123
+08:48:31.149 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidUsername(testCases_MerchantLogin.java:142)oggger - User click on login button to enter in employee login
+08:48:39.156 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:161)oggger - 
+08:48:39.157 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:162)oggger - Login with invalid store name
+08:48:39.157 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:163)oggger - -----------------------
+08:48:39.807 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:167)oggger - Store Name: Chains
+08:48:40.122 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:171)oggger - User Name: vivek@gmail.com
+08:48:40.400 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:175)oggger - Password: Vivek@123
+08:48:40.549 [main] INFO  testCases.testCases_MerchantLogin.loginWithInvalidStoreName(testCases_MerchantLogin.java:178)oggger - User click on login button to enter in employee login
+08:48:48.973 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:193)oggger - 
+08:48:48.974 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:194)oggger - Login with empty fields
+08:48:48.974 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:195)oggger - -----------------------
+08:48:49.616 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:199)oggger - Store Name: 
+08:48:49.813 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:203)oggger - User Name: 
+08:48:49.988 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:207)oggger - Password: 
+08:48:50.154 [main] INFO  testCases.testCases_MerchantLogin.loginWithEmptyFieldsEmployee(testCases_MerchantLogin.java:210)oggger - User click on login button to enter in employee login
+08:51:31.485 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+08:51:31.490 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+08:51:31.490 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+08:51:32.303 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+08:51:32.622 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+08:51:32.899 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+08:51:33.068 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+08:51:47.798 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+08:51:47.805 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+08:51:47.805 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+08:51:48.474 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+08:51:48.815 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+08:51:49.095 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+08:51:49.296 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+08:54:15.253 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+08:54:15.253 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+08:54:15.253 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+08:54:26.564 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+08:54:26.899 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+08:54:27.170 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+08:54:27.334 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+09:04:19.042 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+09:04:19.056 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+09:04:19.056 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+09:04:20.337 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+09:04:20.672 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+09:04:20.943 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+09:04:21.103 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+09:04:26.295 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:232)oggger - 
+09:04:26.297 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:233)oggger - Login with only username entered
+09:04:26.299 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:234)oggger - -----------------------
+09:04:32.923 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:238)oggger - Store Name: 
+09:04:33.315 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:242)oggger - User Name: vivek@gmail.com
+09:04:33.490 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:246)oggger - Password: 
+09:04:33.644 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:249)oggger - User click on login button to enter in employee login
+09:04:37.740 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:267)oggger - 
+09:04:37.740 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:268)oggger - Login with only password entered
+09:04:37.741 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:269)oggger - -----------------------
+09:04:42.853 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:273)oggger - Store Name: 
+09:04:43.043 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:277)oggger - User Name: 
+09:04:43.370 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:281)oggger - Password: Vivek@123
+09:04:43.509 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:284)oggger - User click on login button to enter in employee login
+09:04:53.723 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:302)oggger - 
+09:04:53.724 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:303)oggger - Show password icon functionality
+09:04:53.725 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:304)oggger - -----------------------
+09:04:54.839 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:308)oggger - Store Name: Chain
+09:04:55.191 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:312)oggger - User Name: vivek@gmail.com
+09:04:55.490 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:316)oggger - Password: Vivek@123
+09:04:55.676 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:319)oggger - User click on toggle button to show the password
+09:05:04.731 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:327)oggger - 
+09:05:04.733 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:328)oggger - Login using keyboard enter key
+09:05:04.733 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:329)oggger - -----------------------
+09:05:05.625 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:333)oggger - Store Name: Chain
+09:05:05.943 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:337)oggger - User Name: vivek@gmail.com
+09:05:06.182 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:341)oggger - Password: Vivek@123
+09:05:06.286 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:344)oggger - User pressed ENTER key on login button to enter in employee login
+09:05:55.240 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+09:05:55.246 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+09:05:55.246 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+09:05:56.018 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+09:05:56.353 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+09:05:56.647 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+09:05:56.816 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+09:06:08.086 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:232)oggger - 
+09:06:08.086 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:233)oggger - Login with only username entered
+09:06:08.086 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:234)oggger - -----------------------
+09:06:08.782 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:238)oggger - Store Name: 
+09:06:09.153 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:242)oggger - User Name: vivek@gmail.com
+09:06:09.337 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:246)oggger - Password: 
+09:06:09.489 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyUsernameEntered(testCases_MerchantLogin.java:249)oggger - User click on login button to enter in employee login
+09:06:18.403 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:267)oggger - 
+09:06:18.403 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:268)oggger - Login with only password entered
+09:06:18.403 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:269)oggger - -----------------------
+09:06:19.208 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:273)oggger - Store Name: 
+09:06:19.408 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:277)oggger - User Name: 
+09:06:19.698 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:281)oggger - Password: Vivek@123
+09:06:19.845 [main] INFO  testCases.testCases_MerchantLogin.loginWithOnlyPasswordEntered(testCases_MerchantLogin.java:284)oggger - User click on login button to enter in employee login
+09:06:27.570 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:302)oggger - 
+09:06:27.570 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:303)oggger - Show password icon functionality
+09:06:27.574 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:304)oggger - -----------------------
+09:06:28.383 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:308)oggger - Store Name: Chain
+09:06:28.718 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:312)oggger - User Name: vivek@gmail.com
+09:06:28.971 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:316)oggger - Password: Vivek@123
+09:06:29.127 [main] INFO  testCases.testCases_MerchantLogin.showPasswordIcon(testCases_MerchantLogin.java:319)oggger - User click on toggle button to show the password
+09:06:34.520 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:327)oggger - 
+09:06:34.524 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:328)oggger - Login using keyboard enter key
+09:06:34.524 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:329)oggger - -----------------------
+09:06:40.477 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:333)oggger - Store Name: Chain
+09:06:40.839 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:337)oggger - User Name: vivek@gmail.com
+09:06:41.132 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:341)oggger - Password: Vivek@123
+09:06:41.221 [main] INFO  testCases.testCases_MerchantLogin.loginUsingKeyboardEnterKey(testCases_MerchantLogin.java:344)oggger - User pressed ENTER key on login button to enter in employee login
+09:13:02.742 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+09:13:02.743 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+09:13:02.743 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+09:13:03.469 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+09:13:03.792 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+09:13:04.055 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+09:13:04.224 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+09:13:16.958 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:13:16.960 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:13:16.960 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:14:09.484 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:378)oggger - 
+09:14:09.486 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:379)oggger - Submit valid email on forgot password page
+09:14:09.487 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:380)oggger - -----------------------
+09:14:42.761 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:404)oggger - 
+09:14:42.762 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:405)oggger - Submit invalid email on forgot password page
+09:14:42.762 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:406)oggger - -----------------------
+09:15:13.418 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:430)oggger - 
+09:15:13.419 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:431)oggger - Submit empty email on forgot password page
+09:15:13.419 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:432)oggger - -----------------------
+09:15:47.172 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:456)oggger - 
+09:15:47.172 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:457)oggger - Email format validation on forgot password page
+09:15:47.173 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:458)oggger - -----------------------
+09:17:51.536 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:95)oggger - 
+09:17:51.545 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:96)oggger - Login with incorrect password
+09:17:51.545 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:97)oggger - -----------------------
+09:17:52.116 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:101)oggger - Store Name: Chain
+09:17:52.457 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:105)oggger - User Name: vivek@gmail.com
+09:17:52.732 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:109)oggger - Password: Vivek@1234
+09:17:52.901 [main] INFO  testCases.testCases_MerchantLogin.loginWithIncorrectPassword(testCases_MerchantLogin.java:112)oggger - User click on login button to enter in employee login
+09:18:02.470 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:18:02.472 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:18:02.472 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:18:02.998 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:18:11.618 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:378)oggger - 
+09:18:11.618 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:379)oggger - Submit valid email on forgot password page
+09:18:11.620 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:380)oggger - -----------------------
+09:18:12.104 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:383)oggger - User click on forgot password button
+09:18:13.410 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:388)oggger - Entered email: vivek.dubey521@gmail.com
+09:18:13.808 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:391)oggger - User click on submit button
+09:18:38.829 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:404)oggger - 
+09:18:38.829 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:405)oggger - Submit invalid email on forgot password page
+09:18:38.829 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:406)oggger - -----------------------
+09:18:39.413 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:409)oggger - User click on forgot password button
+09:18:40.726 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:414)oggger - Entered invalid email
+09:18:41.128 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:417)oggger - User click on submit button
+09:19:05.586 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:430)oggger - 
+09:19:05.587 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:431)oggger - Submit empty email on forgot password page
+09:19:05.587 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:432)oggger - -----------------------
+09:19:06.082 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:435)oggger - User click on forgot password button
+09:19:07.217 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:440)oggger - Entered empty email
+09:19:07.603 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:443)oggger - User click on submit button
+09:19:28.530 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:456)oggger - 
+09:19:28.531 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:457)oggger - Email format validation on forgot password page
+09:19:28.531 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:458)oggger - -----------------------
+09:22:08.872 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:22:08.876 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:22:08.876 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:22:09.398 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:22:17.759 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:378)oggger - 
+09:22:17.762 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:379)oggger - Submit valid email on forgot password page
+09:22:17.762 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:380)oggger - -----------------------
+09:22:18.519 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:383)oggger - User click on forgot password button
+09:22:20.185 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:388)oggger - Entered email: vivek.dubey521@gmail.com
+09:22:20.673 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:391)oggger - User click on submit button
+09:22:52.147 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:404)oggger - 
+09:22:52.148 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:405)oggger - Submit invalid email on forgot password page
+09:22:52.149 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:406)oggger - -----------------------
+09:22:52.719 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:409)oggger - User click on forgot password button
+09:22:54.293 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:414)oggger - Entered invalid email
+09:22:54.828 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:417)oggger - User click on submit button
+09:23:20.551 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:430)oggger - 
+09:23:20.551 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:431)oggger - Submit empty email on forgot password page
+09:23:20.552 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:432)oggger - -----------------------
+09:23:21.204 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:435)oggger - User click on forgot password button
+09:23:22.345 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:440)oggger - Entered empty email
+09:23:22.766 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:443)oggger - User click on submit button
+09:23:50.421 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:456)oggger - 
+09:23:50.421 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:457)oggger - Email format validation on forgot password page
+09:23:50.421 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:458)oggger - -----------------------
+09:23:50.953 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:461)oggger - User click on forgot password button
+09:23:52.228 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:466)oggger - Entered malformed email without @
+09:23:52.679 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:469)oggger - User click on submit button
+09:32:10.763 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:32:10.770 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:32:10.770 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:32:20.505 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:32:24.658 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:378)oggger - 
+09:32:24.658 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:379)oggger - Submit valid email on forgot password page
+09:32:24.659 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:380)oggger - -----------------------
+09:32:28.868 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:383)oggger - User click on forgot password button
+09:32:30.323 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:388)oggger - Entered email: vivek.dubey521@gmail.com
+09:32:30.715 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordValidEmail(testCases_MerchantLogin.java:391)oggger - User click on submit button
+09:34:11.443 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:34:11.452 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:34:11.452 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:34:11.948 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:34:13.280 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+09:34:13.280 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+09:34:13.280 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+09:34:40.967 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:425)oggger - 
+09:34:40.967 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:426)oggger - Submit invalid email on forgot password page
+09:34:40.970 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:427)oggger - -----------------------
+09:34:41.516 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:430)oggger - User click on forgot password button
+09:34:43.038 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:435)oggger - Entered invalid email
+09:34:43.709 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordInvalidEmail(testCases_MerchantLogin.java:438)oggger - User click on submit button
+09:35:07.897 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:451)oggger - 
+09:35:07.897 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:452)oggger - Submit empty email on forgot password page
+09:35:07.899 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:453)oggger - -----------------------
+09:35:08.426 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:456)oggger - User click on forgot password button
+09:35:09.574 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:461)oggger - Entered empty email
+09:35:09.990 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmptyEmail(testCases_MerchantLogin.java:464)oggger - User click on submit button
+09:35:33.433 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:477)oggger - 
+09:35:33.433 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:478)oggger - Email format validation on forgot password page
+09:35:33.433 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:479)oggger - -----------------------
+09:35:33.934 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:482)oggger - User click on forgot password button
+09:35:35.176 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:487)oggger - Entered malformed email without @
+09:35:35.612 [main] INFO  testCases.testCases_MerchantLogin.forgotPasswordEmailFormatValidation(testCases_MerchantLogin.java:490)oggger - User click on submit button
+09:41:06.615 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:41:06.618 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:41:06.618 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:41:07.241 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:41:08.594 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+09:41:08.594 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+09:41:08.594 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+09:41:43.918 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+09:41:43.918 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+09:41:43.918 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+09:41:44.722 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+09:41:46.146 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+09:41:46.146 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+09:41:46.147 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+09:41:46.435 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:380)oggger - Entered email: vivek.dubey521@gmail.com
+09:41:46.855 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:383)oggger - User click on submit button
+20:09:10.174 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:09:10.179 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:09:10.180 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:09:10.791 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:09:12.112 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:09:12.113 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:09:12.113 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:09:12.518 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:09:13.961 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:10:10.720 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:10:10.724 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:10:10.724 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:10:11.565 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:10:12.951 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:10:12.952 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:10:12.952 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:10:13.449 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:10:13.930 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:10:53.896 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:10:53.901 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:10:53.901 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:10:54.654 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:10:57.638 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:10:57.638 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:10:57.638 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:10:58.078 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:11:00.343 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:11:57.718 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:11:57.724 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:11:57.724 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:11:58.281 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:11:59.880 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:11:59.883 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:11:59.884 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:12:00.379 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:12:01.100 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:17:07.534 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:17:07.540 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:17:07.540 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:17:08.153 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:17:09.260 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:17:09.260 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:17:09.260 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:17:09.640 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:17:10.229 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:18:47.075 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:18:47.083 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:18:47.083 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:18:47.782 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:18:49.276 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:18:49.276 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:18:49.276 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:18:49.591 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:18:50.238 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+20:19:38.080 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+20:19:38.080 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+20:19:38.080 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+20:19:38.871 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+20:19:41.983 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+20:19:41.984 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+20:19:41.985 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+20:19:42.505 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+20:19:44.937 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button

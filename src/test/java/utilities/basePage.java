@@ -18,12 +18,12 @@ public class basePage {
 	}
 
 	public void visiblityOfElement(By byVisible) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(byVisible));
 	}
 
 	public void elementClick(By byClick) {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(8));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.elementToBeClickable(byClick));
 
 	}

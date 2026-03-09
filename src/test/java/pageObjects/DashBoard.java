@@ -1,0 +1,85 @@
+package pageObjects;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import utilities.basePage;
+
+public class DashBoard extends basePage {
+
+	public DashBoard(WebDriver driver) {
+		super(driver);
+
+	}
+
+	By dashboard_title = By.xpath("//h1[normalize-space()='Merchant Dashboard']");
+
+	By menu = By.xpath("//body//div//img[2]");
+
+	By logout = By.xpath("//li[3]");
+
+	By sideMenu = By.xpath("//div[@class='flex items-center justify-between md:px-4 mx-2']//*[name()='svg']");
+
+	By dashBoardMenu = By
+			.cssSelector("div[class='flex items-center Dashboard-for-android bg-[#414F54] text-[#FFC400]']");
+
+	By inventoryMenu = By.xpath(
+			"//div[@class='relative Inventory-for-android']//div[contains(@class,'w-full flex items-center cursor-pointer')]");
+
+	By category = By.xpath("//a[normalize-space()='Categories']");
+
+	public boolean dashboard_titleDisplay() {
+		visiblityOfElement(dashboard_title);
+		return driver.findElement(dashboard_title).isDisplayed();
+	}
+
+	public void sideMenuClick() {
+		elementClick(sideMenu);
+		driver.findElement(sideMenu).click();
+	}
+
+	public boolean dashBoardMenuVisible() {
+		try {
+			return driver.findElement(dashBoardMenu).isDisplayed();
+		} catch (Exception e) {
+			return false;
+		}
+	}
+
+	public void sideMenuVisible() {
+		if (dashBoardMenuVisible() == false) {
+			sideMenuClick();
+		}
+	}
+
+	public void menuClick() {
+		elementClick(menu);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(menu));
+	}
+
+	public void inventoryMenuClick() {
+		elementClick(inventoryMenu);
+		driver.findElement(inventoryMenu).click();
+	}
+
+	public String inventoryMenuText() {
+		return driver.findElement(inventoryMenu).getText();
+	}
+
+	public void categoryClick() {
+		elementClick(category);
+		driver.findElement(category).click();
+	}
+
+	public String categoryText() {
+		return driver.findElement(category).getText();
+	}
+
+	public void logoutClick() {
+		elementClick(logout);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(logout));
+	}
+}

@@ -22,7 +22,7 @@ public class MerchantLogin extends basePage {
 
 	By passwordField = By.xpath("//input[@id=':r2:']");
 
-	By forgotPasswordBtn = By.xpath("//a[normalize-space()='Forgot Password ?']");
+	By forgotPasswordBtn = By.xpath("//a[normalize-space()='Forgot Password?']");
 
 	By loginBtn = By.xpath("//button[normalize-space()='Login']");
 

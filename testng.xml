@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="api.testCases.TestCase_DashBoardSaleCount"/>
+      <class name="testCases.testCases_ForgotPassword"/>
+      <class name="testCases.testCases_Register"/>
+      <class name="api.testCases.TestCase_DashBoardRevenueViewReport"/>
+      <class name="api.testCases.TestCase_DashBoardCustomerCount"/>
+      <class name="api.testCases.TestCase_DashBoardProfitGenerateViewReport"/>
+      <class name="utilities.baseClass"/>
+      <class name="api.testCases.TestCase_DashBoardSaleCountViewReport"/>
+      <class name="api.testCases.TestCase_DashBoardAvgOrderValue"/>
+      <class name="testCases.testCases_CustomerLogin"/>
+      <class name="api.testCases.TestCase_DashBoardRevenue"/>
+      <class name="api.testCases.TestCase_DashBoardProfitGenerate"/>
+      <class name="api.testCases.TestCase_ValidCustomerRegister"/>
+      <class name="api.testCases.TestCase_DashBoardAvgOrderValueViewReport"/>
+      <class name="api.testCases.TestCase_AdminLogin"/>
+      <class name="testCases.testCases_MerchantLogin"/>
+      <class name="api.testCases.TestCase_DashBoardCustomerCountReport"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

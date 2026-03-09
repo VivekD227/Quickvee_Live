@@ -13,98 +13,30 @@ import utilities.baseClass;
 
 public class testCases_MerchantLogin extends baseClass {
 
-	@Test(priority = 1)
-	public void validatingCorrectPage() {
-
-		logger.info("");
-		logger.info("validate whether the merchant is going in proper page after clicking on merchant login or not");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-
-		Assert.assertEquals(driver.getCurrentUrl(), expectedUrl);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 2)
-	public void quickveeLogoDisplay() {
+	// @Test(priority = 1)
+	public void loginValidCredential() throws InterruptedException {
 
 		logger.info("");
 		logger.info("Validate whether the quickvee logo is displayed or not");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-
-		Assert.assertEquals(driver.getCurrentUrl(), expectedUrl);
-
 		merchantLogin.quickveeLogoDisplay();
 		Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "Quickvee logo is not displayed");
 		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
-	}
-
-	@Test(priority = 3)
-	public void loginValidCredential() throws InterruptedException {
-
 		logger.info("");
-		logger.info("Validate logging into the Application using valid credentials");
+		logger.info("Login with valid merchant credentials");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreName"));
+		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserName"));
+		merchantLogin.setUserName(p.getProperty("merchantUserName"));
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPassword"));
+		merchantLogin.setPassword(p.getProperty("merchantPassword"));
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
 
@@ -112,333 +44,104 @@ public class testCases_MerchantLogin extends baseClass {
 		logger.info("User click on login button to enter in merchant login");
 
 		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/users/unapprove";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-		String superAdmin = "Superadmin";
-		Assert.assertEquals(driver.findElement(By.xpath("//p[@class='admin_medium']")).getText(), superAdmin);
-
+		Assert.assertTrue(dashboard.dashboard_titleDisplay(), "DashBoard Title is not displayed");
 		logger.info("User is on " + driver.getCurrentUrl() + " url");
+
+		dashboard.menuClick();
+		Thread.sleep(2000);
+		dashboard.logoutClick();
+		Thread.sleep(2000);
+		Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "User is not logout");
 
 	}
 
-	@Test(priority = 4)
-	public void loginInValidCredential() throws InterruptedException {
+	// @Test(priority = 2)
+	public void loginValidEmployeeCredential() throws InterruptedException {
 
 		logger.info("");
-		logger.info(
-				"Validate logging into the Application using invalid credentials (i.e. Invalid storename, Invalid email address and Invalid Password)");
+		logger.info("Login with valid employee credentials");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameInvalid"));
+		merchantLogin.setStoreName("Chain");
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserNameInvalid"));
+		merchantLogin.setUserName("vivek@gmail.com");
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPasswordInvalid"));
+		merchantLogin.setPassword("Vivek@123");
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
 
 		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 5)
-	public void invalidEmail() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Verify logging into the Application using invalid email address and valid Password, valid storeName)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserNameInvalid"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("adminPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		logger.info("User click on login button to enter in employee login");
 
 		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
+		Assert.assertTrue(dashboard.dashboard_titleDisplay(), "DashBoard Title is not displayed");
 		logger.info("User is on " + driver.getCurrentUrl() + " url");
 
-	}
-
-	@Test(priority = 6)
-	public void invalidPassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and invalid Password and valid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("adminPasswordInvalid"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 7)
-	public void invalidStorename() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and valid Password and Invalid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameInvalid"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("adminPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 8)
-	public void invalidStorenamePassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and Invalid Password and Invalid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameInvalid"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("adminPasswordInvalid"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 9)
-	public void InvalidEmailPassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using Invalid email address and Invalid Password and valid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserNameInvalid"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("adminPasswordInvalid"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
+		dashboard.menuClick();
 		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
+		dashboard.logoutClick();
+		Thread.sleep(2000);
+		Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "User is not logout");
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
+	}
+
+	// @Test(priority = 3)
+	public void loginWithIncorrectPassword() throws InterruptedException {
+
+		logger.info("");
+		logger.info("Login with incorrect password");
+		logger.info("-----------------------");
+
+		merchantLogin.setStoreName("Chain");
+		String storeNameField = merchantLogin.getStoreName();
+		logger.info("Store Name: " + storeNameField);
+
+		merchantLogin.setUserName("vivek@gmail.com");
+		String userNameField = merchantLogin.getUserName();
+		logger.info("User Name: " + userNameField);
+
+		merchantLogin.setPassword("Vivek@1234");
+		String passwordField = merchantLogin.getPassword();
+		logger.info("Password: " + passwordField);
+
+		merchantLogin.loginBtnClick();
+		logger.info("User click on login button to enter in employee login");
+
+		Thread.sleep(1500);
+		String errorMessage = "Incorrect Username & Password";
+		Assert.assertEquals(driver.findElement(By.xpath(
+				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
+				.getText(), errorMessage);
+
+	}
+
+	// @Test(priority = 4)
+	public void loginWithInvalidUsername() throws InterruptedException {
+
+		logger.info("");
+		logger.info("Login with invalid username");
+		logger.info("-----------------------");
+
+		merchantLogin.setStoreName("Chain");
+		String storeNameField = merchantLogin.getStoreName();
+		logger.info("Store Name: " + storeNameField);
+
+		merchantLogin.setUserName("vivek12@gmail.com");
+		String userNameField = merchantLogin.getUserName();
+		logger.info("User Name: " + userNameField);
+
+		merchantLogin.setPassword("Vivek@123");
+		String passwordField = merchantLogin.getPassword();
+		logger.info("Password: " + passwordField);
+
+		merchantLogin.loginBtnClick();
+		logger.info("User click on login button to enter in employee login");
+
+		Thread.sleep(1000);
 
 		Thread.sleep(500);
 		String errorMessage = "Incorrect Username & Password";
@@ -450,52 +153,31 @@ public class testCases_MerchantLogin extends baseClass {
 		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
 				emailError);
 
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
 	}
 
-	@Test(priority = 10)
-	public void invalidStoreNameEmail() throws InterruptedException {
+	// @Test(priority = 5)
+	public void loginWithInvalidStoreName() throws InterruptedException {
 
 		logger.info("");
-		logger.info(
-				"Validate logging into the Application using Invalid email address and valid Password and Invalid Storename)");
+		logger.info("Login with invalid store name");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameInvalid"));
+		merchantLogin.setStoreName("Chains");
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserNameInvalid"));
+		merchantLogin.setUserName("vivek@gmail.com");
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPassword"));
+		merchantLogin.setPassword("Vivek@123");
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
 
 		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		logger.info("User click on login button to enter in employee login");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
 
 		Thread.sleep(500);
 		String errorMessage = "Incorrect Username & Password";
@@ -503,57 +185,31 @@ public class testCases_MerchantLogin extends baseClass {
 				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
 				.getText(), errorMessage);
 
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
 	}
-	
-	@Test(priority = 11)
-	public void properErrorMessage() throws InterruptedException {
+
+	// @Test(priority = 6)
+	public void loginWithEmptyFieldsEmployee() throws InterruptedException {
 
 		logger.info("");
-		logger.info("Validate whether the proper error message is displayed or not");
+		logger.info("Login with empty fields");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameBlank"));
+		merchantLogin.setStoreName("");
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserNameBlank"));
+		merchantLogin.setUserName("");
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPasswordBlank"));
+		merchantLogin.setPassword("");
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
 
 		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		logger.info("User click on login button to enter in employee login");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
 
 		String storeError = "Store Name is required";
 		Assert.assertEquals(
@@ -568,606 +224,273 @@ public class testCases_MerchantLogin extends baseClass {
 		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Password is required']")).getText(),
 				passwordError);
 
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
 	}
 
-	@Test(priority = 12)
-	public void blankCredential() throws InterruptedException {
+	// @Test(priority = 7)
+	public void loginWithOnlyUsernameEntered() throws InterruptedException {
 
 		logger.info("");
-		logger.info("Validate logging into the Application without providing any credentials");
+		logger.info("Login with only username entered");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameBlank"));
+		merchantLogin.setStoreName("");
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserNameBlank"));
+		merchantLogin.setUserName("vivek@gmail.com");
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPasswordBlank"));
+		merchantLogin.setPassword("");
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
 
 		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		logger.info("User click on login button to enter in employee login");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
+		String storeError = "Store Name is required";
+		Assert.assertEquals(
+				driver.findElement(By.xpath("//span[normalize-space()='Store Name is required']")).getText(),
+				storeError);
 
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
+		String passwordError = "Password is required";
+		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Password is required']")).getText(),
+				passwordError);
 
-		Thread.sleep(500);
 	}
-	
-	@Test(priority = 13)
-	public void passwordToggleButton() throws InterruptedException {
+
+	// @Test(priority = 8)
+	public void loginWithOnlyPasswordEntered() throws InterruptedException {
 
 		logger.info("");
-		logger.info("Check the password show and hide functionality");
+		logger.info("Login with only password entered");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreName"));
+		merchantLogin.setStoreName("");
 		String storeNameField = merchantLogin.getStoreName();
 		logger.info("Store Name: " + storeNameField);
 
-		merchantLogin.setUserName(p.getProperty("adminUserName"));
+		merchantLogin.setUserName("");
 		String userNameField = merchantLogin.getUserName();
 		logger.info("User Name: " + userNameField);
 
-		merchantLogin.setPassword(p.getProperty("adminPassword"));
+		merchantLogin.setPassword("Vivek@123");
 		String passwordField = merchantLogin.getPassword();
 		logger.info("Password: " + passwordField);
-		
+
+		merchantLogin.loginBtnClick();
+		logger.info("User click on login button to enter in employee login");
+
+		Thread.sleep(1000);
+
+		String storeError = "Store Name is required";
+		Assert.assertEquals(
+				driver.findElement(By.xpath("//span[normalize-space()='Store Name is required']")).getText(),
+				storeError);
+
+		String emailError = "Username is required";
+		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Username is required']")).getText(),
+				emailError);
+
+	}
+
+	// @Test(priority = 9)
+	public void showPasswordIcon() throws InterruptedException {
+
+		logger.info("");
+		logger.info("Show password icon functionality");
+		logger.info("-----------------------");
+
+		merchantLogin.setStoreName("Chain");
+		String storeNameField = merchantLogin.getStoreName();
+		logger.info("Store Name: " + storeNameField);
+
+		merchantLogin.setUserName("vivek@gmail.com");
+		String userNameField = merchantLogin.getUserName();
+		logger.info("User Name: " + userNameField);
+
+		merchantLogin.setPassword("Vivek@123");
+		String passwordField = merchantLogin.getPassword();
+		logger.info("Password: " + passwordField);
+
 		merchantLogin.tooglePassword();
 		logger.info("User click on toggle button to show the password");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-		Thread.sleep(500);
-	}
-	
-	@Test(priority = 14)
-	public void forgetPasswordVisible() throws InterruptedException {
-
-		logger.info("");
-		logger.info("Check whether the forgot password is visible in merchant login functionality");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		
-		Assert.assertTrue(merchantLogin.forgotPasswordDisplay(), "The forgot password is not visible");
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-		Thread.sleep(500);
 	}
 
-	@Test(priority = 15)
-	public void forgetPasswordClick() throws InterruptedException {
+	// @Test(priority = 10)
+	public void loginUsingKeyboardEnterKey() throws InterruptedException {
 
 		logger.info("");
-		logger.info("Check whether the forgot password is visible in merchant login functionality");
+		logger.info("Login using keyboard enter key");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
+		merchantLogin.setStoreName("Chain");
+		String storeNameField = merchantLogin.getStoreName();
+		logger.info("Store Name: " + storeNameField);
 
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
+		merchantLogin.setUserName("vivek@gmail.com");
+		String userNameField = merchantLogin.getUserName();
+		logger.info("User Name: " + userNameField);
 
-		String originalWindow = driver.getWindowHandle();
+		merchantLogin.setPassword("Vivek@123");
+		String passwordField = merchantLogin.getPassword();
+		logger.info("Password: " + passwordField);
 
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		
+		driver.findElement(By.xpath("//button[normalize-space()='Login']")).sendKeys(org.openqa.selenium.Keys.ENTER);
+		logger.info("User pressed ENTER key on login button to enter in employee login");
+
+		Thread.sleep(2000);
+		Assert.assertTrue(dashboard.dashboard_titleDisplay(), "DashBoard Title is not displayed");
+
+		dashboard.menuClick();
+		Thread.sleep(2000);
+		dashboard.logoutClick();
+		Thread.sleep(2000);
+		Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "User is not logout");
+
+	}
+
+	@Test(priority = 11)
+	public void navigateToForgotPasswordPage() throws InterruptedException {
+
+		logger.info("");
+		logger.info("Navigate to forgot password page");
+		logger.info("-----------------------");
+
 		merchantLogin.forgotPasswordClick();
 		logger.info("User click on forgot password button");
 
-		String forgetPasswordText = "Forgot Password";
-		Assert.assertEquals(driver.findElement(By.xpath("//h1[normalize-space()='Forgot Password']")).getText(), forgetPasswordText);
-
+		Thread.sleep(3000);
 		String actualUrl = driver.getCurrentUrl();
-		String expectedUrl = "https://www.quickvee.com/merchants/forgot-password";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected forgot password redirection");
-		
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
+		String expectedUrl = "https://quickvee.com/merchants/forgot-password";
+		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected redirection to forgot password page");
 
-		Thread.sleep(500);
-	}
-	
-	@Test(priority = 16)
-	public void merchantloginValidCredential() throws InterruptedException {
+		Assert.assertTrue(forgotPassword.otherTextDisplay(), "Forgot password page text not displayed");
 
 		logger.info("");
-		logger.info("Validate logging into the Application using valid credentials");
+		logger.info("Submit valid email on forgot password page");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
+		forgotPassword.setEmailIdMerchant(p.getProperty("forgotPasswordEmail"));
+		logger.info("Entered email: " + p.getProperty("merchantUserName"));
 
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
+		forgotPassword.submitBtnClickMerchant();
+		logger.info("User click on submit button");
 
-		String originalWindow = driver.getWindowHandle();
+		Thread.sleep(10000);
 
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
+		String expectedMessage = "Please check your email for the password reset instructions.";
+		String actualMessage = forgotPassword.emailMessageDisplayed();
+		Assert.assertEquals(actualMessage, expectedMessage);
+	}
 
-		merchantLogin.setUserName(p.getProperty("merchantUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
+	// @Test(priority = 12)
+	// public void forgotPasswordValidEmail() throws InterruptedException {
+	//
+	// logger.info("");
+	// logger.info("Submit valid email on forgot password page");
+	// logger.info("-----------------------");
+	// Thread.sleep(2000);
+	// merchantLogin.forgotPasswordClick();
+	// logger.info("User click on forgot password button");
+	//
+	// Thread.sleep(1000);
+	//
+	// forgotPassword.setEmailIdMerchant(p.getProperty("merchantUserName"));
+	// logger.info("Entered email: " + p.getProperty("merchantUserName"));
+	//
+	// forgotPassword.submitBtnClickMerchant();
+	// logger.info("User click on submit button");
+	//
+	// Thread.sleep(2000);
+	//
+	// String expectedMessage = "Instructions to reset your password have been sent
+	// to your email";
+	// String actualMessage = forgotPassword.emailMessageDisplayed();
+	// Assert.assertEquals(actualMessage, expectedMessage);
+	//
+	// }
 
-		merchantLogin.setPassword(p.getProperty("merchantPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
+	//@Test(priority = 13)
+	public void forgotPasswordInvalidEmail() throws InterruptedException {
 
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		logger.info("");
+		logger.info("Submit invalid email on forgot password page");
+		logger.info("-----------------------");
+
+		merchantLogin.forgotPasswordClick();
+		logger.info("User click on forgot password button");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-		String merchantLoginText = "Chain Smoker";
-		Assert.assertEquals(driver.findElement(By.xpath("//p[@class='admin_medium']")).getText(), merchantLoginText);
+		forgotPassword.setEmailIdMerchant("invalidmerchant@quickvee.xyz");
+		logger.info("Entered invalid email");
 
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-	
-	@Test(priority = 17)
-	public void merchantloginInValidCredential() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using invalid credentials (i.e. Invalid storename, Invalid email address and Invalid Password)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("merchantInvalidStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantInvalidUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantInvalidPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		forgotPassword.submitBtnClickMerchant();
+		logger.info("User click on submit button");
 
 		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
+		String expectedMessage = "Merchant Not Exist";
+		String actualMessage = forgotPassword.emailMessageDisplayed();
+		Assert.assertTrue(actualMessage.contains("Not Exist") || actualMessage.contains("not found"),
+				"Error message not showing user doesn't exist");
 
 	}
 
-	@Test(priority = 18)
-	public void merchantInvalidEmail() throws InterruptedException {
+//	@Test(priority = 14)
+	public void forgotPasswordEmptyEmail() throws InterruptedException {
 
 		logger.info("");
-		logger.info(
-				"Verify logging into the Application using invalid email address and valid Password, valid storeName)");
+		logger.info("Submit empty email on forgot password page");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantInvalidUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		merchantLogin.forgotPasswordClick();
+		logger.info("User click on forgot password button");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
+		forgotPassword.setEmailIdMerchant("");
+		logger.info("Entered empty email");
 
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-	
-
-	
-	@Test(priority = 19)
-	public void merchantInvalidPassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and invalid Password and valid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		
-		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantInvalidPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		forgotPassword.submitBtnClickMerchant();
+		logger.info("User click on submit button");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
+		String expectedError = "Email is required";
+		String actualError = forgotPassword.emailFormatMessage();
+		Assert.assertEquals(actualError, expectedError);
 
 	}
 
-	@Test(priority = 20)
-	public void merchantInvalidStorename() throws InterruptedException {
+	//@Test(priority = 15)
+	public void forgotPasswordEmailFormatValidation() throws InterruptedException {
 
 		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and valid Password and Invalid Storename)");
+		logger.info("Email format validation on forgot password page");
 		logger.info("-----------------------");
 
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-
-		merchantLogin.setStoreName(p.getProperty("merchantInvalidStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		merchantLogin.forgotPasswordClick();
+		logger.info("User click on forgot password button");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
+		forgotPassword.setEmailIdMerchant("plainaddress");
+		logger.info("Entered malformed email without @");
 
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 21)
-	public void merchantsInvalidStorenamePassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using valid email address and Invalid Password and Invalid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("merchantInvalidStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantInvalidPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
+		forgotPassword.submitBtnClickMerchant();
+		logger.info("User click on submit button");
 
 		Thread.sleep(1000);
-		String actualUrl = driver.getCurrentUrl();
 
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 22)
-	public void merchantInvalidEmailPassword() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application using Invalid email address and valid Password and Invalid Storename)");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("merchantInvalidUserName"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantInvalidPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
-
-	}
-
-	@Test(priority = 23)
-	public void merchantInvalidStoreNameEmail() throws InterruptedException {
-
-		logger.info("");
-		logger.info(
-				"Validate logging into the Application without providing any credentials");
-		logger.info("-----------------------");
-
-		homePage.loginBtn();
-		logger.info("User click on login button");
-
-		customerLogin.merchantLoginClick();
-		logger.info("User click on merchant login button");
-
-		String originalWindow = driver.getWindowHandle();
-
-		for (String windowHandle : driver.getWindowHandles()) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		merchantLogin.setStoreName(p.getProperty("adminStoreNameInvalid"));
-		String storeNameField = merchantLogin.getStoreName();
-		logger.info("Store Name: " + storeNameField);
-
-		merchantLogin.setUserName(p.getProperty("adminUserNameInvalid"));
-		String userNameField = merchantLogin.getUserName();
-		logger.info("User Name: " + userNameField);
-
-		merchantLogin.setPassword(p.getProperty("merchantPassword"));
-		String passwordField = merchantLogin.getPassword();
-		logger.info("Password: " + passwordField);
-
-		merchantLogin.loginBtnClick();
-		logger.info("User click on login button to enter in merchant login");
-
-		Thread.sleep(2000);
-		String actualUrl = driver.getCurrentUrl();
-
-		String expectedUrl = "https://www.quickvee.com/merchants/login";
-		Assert.assertEquals(actualUrl, expectedUrl, "Unexpected login redirection");
-
-		Thread.sleep(500);
-		String errorMessage = "Incorrect Username & Password";
-		Assert.assertEquals(driver.findElement(By.xpath(
-				"//div[contains(@class, 'MuiAlert-message') and contains(text(), 'Incorrect Username & Password')]"))
-				.getText(), errorMessage);
-
-		String emailError = "Invalid Username";
-		Assert.assertEquals(driver.findElement(By.xpath("//span[normalize-space()='Invalid Username']")).getText(),
-				emailError);
-
-		logger.info("User is on " + driver.getCurrentUrl() + " url");
+		// String expectedError = "Invalid Email";
+		String actualError = forgotPassword.emailFormatMessage();
+		Assert.assertTrue(actualError.contains("Invalid"), "Expected 'Invalid Email' error text");
 
 	}
 

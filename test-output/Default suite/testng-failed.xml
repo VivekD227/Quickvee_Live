@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="api.testCases.TestCase_DashBoardAvgOrderValue">
+      <class name="testCases.testCases_MerchantLogin">
         <methods>
-          <include name="setup"/>
-          <include name="AvgOrderValueDashBoard"/>
+          <include name="tearDown"/>
+          <include name="navigateToForgotPasswordPage"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- api.testCases.TestCase_DashBoardAvgOrderValue -->
+      </class> <!-- testCases.testCases_MerchantLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

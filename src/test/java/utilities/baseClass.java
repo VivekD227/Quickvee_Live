@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.CustomerLogin;
+import pageObjects.DashBoard;
 import pageObjects.ForgotPassword;
 import pageObjects.HomePage;
 import pageObjects.MerchantLogin;
@@ -25,6 +26,7 @@ public class baseClass {
 	public RegisterPage register;
 	public MerchantLogin merchantLogin;
 	public ForgotPassword forgotPassword;
+	public DashBoard dashboard;
 	public Logger logger;
 	
 	public Properties p;
@@ -43,12 +45,13 @@ public class baseClass {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		driver.get(p.getProperty("liveUrlFrontend"));
+		driver.get(p.getProperty("backendURL"));
 		homePage = new HomePage(driver);
 		customerLogin = new CustomerLogin(driver);
 		register = new RegisterPage(driver);
 		merchantLogin = new MerchantLogin(driver);
 		forgotPassword = new ForgotPassword(driver);
+		dashboard = new DashBoard(driver);
 	}
 	
 	
