@@ -9,8 +9,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+
+import pageObjects.CategoryPage;
 import pageObjects.CustomerLogin;
 import pageObjects.DashBoard;
 import pageObjects.ForgotPassword;
@@ -27,11 +29,13 @@ public class baseClass {
 	public MerchantLogin merchantLogin;
 	public ForgotPassword forgotPassword;
 	public DashBoard dashboard;
+	public CategoryPage category;
 	public Logger logger;
+	public DataGenerator data;
 	
 	public Properties p;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void setUp() throws IOException {
 		
 		//loading config properties files
@@ -52,10 +56,12 @@ public class baseClass {
 		merchantLogin = new MerchantLogin(driver);
 		forgotPassword = new ForgotPassword(driver);
 		dashboard = new DashBoard(driver);
+		category = new CategoryPage(driver);
+		data = new DataGenerator();
 	}
 	
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() throws InterruptedException {
 		Thread.sleep(500);
 		driver.quit();

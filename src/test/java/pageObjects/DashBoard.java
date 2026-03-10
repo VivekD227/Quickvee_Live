@@ -36,7 +36,8 @@ public class DashBoard extends basePage {
 
 	public void sideMenuClick() {
 		elementClick(sideMenu);
-		driver.findElement(sideMenu).click();
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(sideMenu));
 	}
 
 	public boolean dashBoardMenuVisible() {
@@ -61,19 +62,23 @@ public class DashBoard extends basePage {
 
 	public void inventoryMenuClick() {
 		elementClick(inventoryMenu);
-		driver.findElement(inventoryMenu).click();
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(inventoryMenu));
 	}
 
 	public String inventoryMenuText() {
+		visiblityOfElement(inventoryMenu);
 		return driver.findElement(inventoryMenu).getText();
 	}
 
 	public void categoryClick() {
 		elementClick(category);
-		driver.findElement(category).click();
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(category));
 	}
 
 	public String categoryText() {
+		visiblityOfElement(category);
 		return driver.findElement(category).getText();
 	}
 

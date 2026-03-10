@@ -2354,3 +2354,12 @@
 20:19:41.985 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
 20:19:42.505 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
 20:19:44.937 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+00:37:33.011 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:360)oggger - 
+00:37:33.011 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:361)oggger - Navigate to forgot password page
+00:37:33.020 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:362)oggger - -----------------------
+00:37:33.922 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:365)oggger - User click on forgot password button
+00:37:39.825 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:374)oggger - 
+00:37:39.825 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:375)oggger - Submit valid email on forgot password page
+00:37:39.825 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
+00:37:40.079 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
+00:37:43.079 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
