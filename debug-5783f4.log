@@ -1,0 +1,4 @@
+{"sessionId":"5783f4","location":"testCases_CategoryPage.java:199","message":"validateCategoryDataOnEdit start","data":{"userDir":"C:\\Vivek_Automation\\Quickvee_Live"},"timestamp":1773317643070}
+{"sessionId":"5783f4","location":"CategoryPage.java:297","message":"assertTaxesSelected entry","data":{"expectedTaxNames":["DefaultTax","GSTs"],"logPath":"C:\\Vivek_Automation\\Quickvee_Live\\debug-5783f4.log"},"timestamp":1773317657294}
+{"sessionId":"5783f4","location":"CategoryPage.java:312","message":"Tax option checked","data":{"taxName":"DefaultTax","found":true,"hasCheckmarkSvg":true},"timestamp":1773317657908}
+{"sessionId":"5783f4","location":"CategoryPage.java:312","message":"Tax option checked","data":{"taxName":"GSTs","found":true,"hasCheckmarkSvg":true},"timestamp":1773317657939}
