@@ -29,7 +29,7 @@ public class CategoryPage extends basePage {
 
 	By tooltipTextLocator = By.xpath("//div[contains(@class, 'MuiTooltip-tooltip')]");
 
-	By closeBtn = By.xpath("//div[contains(@class,'flex') and contains(@class,'justify-between')]//img[@alt='icon']");
+	By closeBtn = By.xpath("//div[@class='flex justify-between gap-4']//img[@alt='icon']");
 
 	By newCatText = By.xpath("//p[@class='MuiTypography-root MuiTypography-body1 text-justify css-1erbx20']");
 
@@ -91,8 +91,7 @@ public class CategoryPage extends basePage {
 	}
 
 	public void closeBtnClick() {
-		visiblityOfElement(closeBtn);
-		driver.findElement(closeBtn).click();
+		clickWithJs(closeBtn);
 	}
 
 	public void cancelBtnClick() {
@@ -172,7 +171,7 @@ public class CategoryPage extends basePage {
 	}
 
 	public void addNewCatClick() {
-		driver.findElement(addText).click();
+		clickWithJs(addText);
 	}
 
 	public void addBtnClick() {

@@ -6,8 +6,8 @@
       <class name="testCases.testCases_CategoryPage">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyDeleteCategoryRemovesCategory"/>
           <include name="setUp"/>
+          <include name="addCategoryAndToggleOnlineRegisterCheckboxes"/>
         </methods>
       </class> <!-- testCases.testCases_CategoryPage -->
     </classes>

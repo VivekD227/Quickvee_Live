@@ -9,7 +9,7 @@ import utilities.baseClass;
 public class testCases_CategoryPage extends baseClass {
 	
 	String categoryNames = DataGenerator.generateRandomCategoryName("Cat");
-	
+	String cname = DataGenerator.generateRandomCategoryName("Lot");
 	public void deleteCode() {
 		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
 		merchantLogin.setUserName(p.getProperty("merchantUserName"));
@@ -27,7 +27,7 @@ public class testCases_CategoryPage extends baseClass {
 		dashboard.categoryClick();
 	}
 	
-	//@Test(priority = 1)
+	@Test(priority = 1)
 	public void categoryList() throws InterruptedException {
 
 		merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
@@ -67,9 +67,9 @@ public class testCases_CategoryPage extends baseClass {
 		category.closeBtnClick();
 	}
 
-	//@Test(priority = 2)
+	@Test(priority = 2)
 	public void newCategory() throws InterruptedException {
-		deleteCode();
+		//deleteCode();
 		category.addCategoryBtnClick();
 		String newName = "Before you can start using Quickvee POS, make sure to create at least one category.";
 		Assert.assertEquals(category.newCatTextDisplay(), newName);
@@ -105,9 +105,9 @@ public class testCases_CategoryPage extends baseClass {
 		category.assertOnlineAndRegisterCheckmarksChecked();
 	}
 
-	//@Test(priority = 3)
+	@Test(priority = 3)
 	public void verifyCategoryNameMandatory() throws InterruptedException {
-		deleteCode();
+		//deleteCode();
 		
 		category.addCategoryBtnClick();
 
@@ -123,7 +123,7 @@ public class testCases_CategoryPage extends baseClass {
 		category.addNewCatClick();
 	}
 
-	//@Test(priority = 4)
+	@Test(priority = 4)
 	public void verifyCategoryNameUniqueness() throws InterruptedException {
 	//	deleteCode();
 		Thread.sleep(2000);
@@ -142,12 +142,13 @@ public class testCases_CategoryPage extends baseClass {
 
 	}
 
-	//@Test(priority = 5)
+	@Test(priority = 5)
 	public void verifyMultipleTaxSelection() throws InterruptedException {
 		//deleteCode();
+		String multiTaxCategoryName = DataGenerator.generateRandomCategoryName("Cat");
 		category.addCategoryBtnClick();
 
-		category.setCategoryInput(categoryNames);
+		category.setCategoryInput(multiTaxCategoryName);
 		category.setDescInput("test");
 		category.selectMultipleTaxes("DefaultTax", "GSTs");
 		Thread.sleep(500);
@@ -155,12 +156,12 @@ public class testCases_CategoryPage extends baseClass {
 		category.addBtnClick();
 		Thread.sleep(2000);
 		category.assertAddedSuccessfullyDisplayed();
-		category.presentCategory(categoryNames);
+		category.presentCategory(multiTaxCategoryName);
 	}
 
-//	@Test(priority = 6)
+	@Test(priority = 6)
 	public void verifyLotteryCheckboxFunctionality() throws InterruptedException {
-		deleteCode();
+		//deleteCode();
 		category.addCategoryBtnClick();
 
 		category.setCategoryInput(categoryNames);
@@ -179,12 +180,13 @@ public class testCases_CategoryPage extends baseClass {
 		category.addNewCatClick();
 	}
 
-//	@Test(priority = 7)
+	@Test(priority = 7)
 	public void addCategoryWithLotteryChecked() throws InterruptedException {
 		//deleteCode();
+		Thread.sleep(2000);
 		category.addCategoryBtnClick();
 
-		category.setCategoryInput(categoryNames);
+		category.setCategoryInput(cname);
 		category.setDescInput("test");
 		
 		category.clickLottery();
@@ -193,11 +195,11 @@ public class testCases_CategoryPage extends baseClass {
 		category.addBtnClick();
 		Thread.sleep(2000);
 		category.assertAddedSuccessfullyDisplayed();
-		category.presentCategory(categoryNames);
+		category.presentCategory(cname);
 		category.assertOnlineCheckmarkUncheckedForLotteryCategory(categoryNames);
 	}
 
-//	@Test(priority = 8)
+	@Test(priority = 8)
 	public void validateCategoryDataOnEdit() throws InterruptedException {
 		String catName = DataGenerator.generateRandomCategoryName("Cat");
 		String catDesc = "Test description for edit validation";
@@ -243,7 +245,7 @@ public class testCases_CategoryPage extends baseClass {
 
 	}
 
-//	@Test(priority = 9)
+	@Test(priority = 9)
 	public void verifyQuickaddCategoryTitleNotEditable() throws InterruptedException {
 		category.presentCategory("Quickadd");
 		category.clickEditForCategory("Quickadd");
@@ -256,7 +258,7 @@ public class testCases_CategoryPage extends baseClass {
 
 	@Test(priority = 10)
 	public void verifyDeleteConfirmationPopupDisplayed() throws InterruptedException {
-		deleteCode();
+//		deleteCode();
 		String catName = DataGenerator.generateRandomCategoryName("DelCat");
 		category.addCategoryBtnClick();
 		category.setCategoryInput(catName);
