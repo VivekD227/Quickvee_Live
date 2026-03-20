@@ -1,6 +1,9 @@
 package testCases;
 
+import java.lang.reflect.Method;
+
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import utilities.DataGenerator;
@@ -25,6 +28,11 @@ public class testCases_CategoryPage extends baseClass {
 		String category_text = "Categories";
 		Assert.assertEquals(dashboard.categoryText(), category_text);
 		dashboard.categoryClick();
+	}
+
+	@BeforeMethod
+	public void logTestName(Method method) {
+		System.out.println("====== Running Test: " + method.getName() + " ======");
 	}
 	
 	@Test(priority = 1)
