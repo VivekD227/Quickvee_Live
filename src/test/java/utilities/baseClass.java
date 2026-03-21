@@ -12,7 +12,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import pageObjects.BrandPage;
 import pageObjects.CategoryPage;
+import pageObjects.TagPage;
+import pageObjects.ProductAttributesPage;
 import pageObjects.CustomerLogin;
 import pageObjects.DashBoard;
 import pageObjects.ForgotPassword;
@@ -30,6 +33,9 @@ public class baseClass {
 	public ForgotPassword forgotPassword;
 	public DashBoard dashboard;
 	public CategoryPage category;
+	public BrandPage brand;
+	public TagPage tag;
+	public ProductAttributesPage productAttributes;
 	public Logger logger;
 	public DataGenerator data;
 	
@@ -57,6 +63,9 @@ public class baseClass {
 		forgotPassword = new ForgotPassword(driver);
 		dashboard = new DashBoard(driver);
 		category = new CategoryPage(driver);
+		brand = new BrandPage(driver);
+		tag = new TagPage(driver);
+		productAttributes = new ProductAttributesPage(driver);
 		data = new DataGenerator();
 	}
 	

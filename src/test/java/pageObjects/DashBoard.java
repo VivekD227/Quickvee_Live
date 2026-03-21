@@ -2,7 +2,6 @@ package pageObjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 import utilities.basePage;
 
@@ -28,6 +27,12 @@ public class DashBoard extends basePage {
 			"//div[@class='relative Inventory-for-android']//div[contains(@class,'w-full flex items-center cursor-pointer')]");
 
 	By category = By.xpath("//a[normalize-space()='Categories']");
+
+	By brands = By.xpath("//a[normalize-space()='Brands']");
+
+	By tags = By.xpath("//a[normalize-space()='Tags']");
+
+	By attributes = By.xpath("//a[normalize-space()='Product Attributes']");
 
 	public boolean dashboard_titleDisplay() {
 		visiblityOfElement(dashboard_title);
@@ -80,6 +85,39 @@ public class DashBoard extends basePage {
 	public String categoryText() {
 		visiblityOfElement(category);
 		return driver.findElement(category).getText();
+	}
+
+	public void brandsClick() {
+		elementClick(brands);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(brands));
+	}
+
+	public String brandsMenuText() {
+		visiblityOfElement(brands);
+		return driver.findElement(brands).getText();
+	}
+
+	public void tagsClick() {
+		elementClick(tags);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(tags));
+	}
+
+	public String tagsMenuText() {
+		visiblityOfElement(tags);
+		return driver.findElement(tags).getText();
+	}
+
+	public void attributesClick() {
+		elementClick(attributes);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(attributes));
+	}
+
+	public String attributesMenuText() {
+		visiblityOfElement(attributes);
+		return driver.findElement(attributes).getText();
 	}
 
 	public void logoutClick() {

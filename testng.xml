@@ -19,6 +19,9 @@
       <class name="api.testCases.TestCase_DashBoardAvgOrderValueViewReport"/>
       <class name="api.testCases.TestCase_AdminLogin"/>
       <class name="testCases.testCases_MerchantLogin"/>
+      <class name="testCases.testCases_BrandPage"/>
+      <class name="testCases.testCases_TagPage"/>
+      <class name="testCases.testCases_ProductAttributesPage"/>
       <class name="api.testCases.TestCase_DashBoardCustomerCountReport"/>
     </classes>
   </test> <!-- Test -->

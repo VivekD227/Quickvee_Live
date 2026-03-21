@@ -18,4 +18,22 @@ public class DataGenerator {
         return randomSuffix;
     }
 
+    /** Random name for Brand UI tests (same pattern as categories). */
+    public static String generateRandomBrandName(String prefix) {
+        String randomSuffix = UUID.randomUUID().toString().substring(0, 8);
+        if (prefix != null && !prefix.isEmpty()) {
+            return prefix + randomSuffix;
+        }
+        return randomSuffix;
+    }
+
+    /** Random name for Tag UI tests (same pattern as brands). */
+    public static String generateRandomTagName(String prefix) {
+        return generateRandomBrandName(prefix);
+    }
+
+    public static String generateRandomAttributeName(String prefix) {
+        return generateRandomBrandName(prefix);
+    }
+
 }

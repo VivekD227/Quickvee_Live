@@ -77,7 +77,7 @@ public class testCases_CategoryPage extends baseClass {
 
 	@Test(priority = 2)
 	public void newCategory() throws InterruptedException {
-		//deleteCode();
+	//	deleteCode();
 		category.addCategoryBtnClick();
 		String newName = "Before you can start using Quickvee POS, make sure to create at least one category.";
 		Assert.assertEquals(category.newCatTextDisplay(), newName);
@@ -121,6 +121,7 @@ public class testCases_CategoryPage extends baseClass {
 
 		category.setDescInput("test");
 		category.selectTaxClick();
+		Thread.sleep(1000);
 		category.taxSelect("DefaultTax");
 
 		category.addBtnClick();
@@ -133,13 +134,14 @@ public class testCases_CategoryPage extends baseClass {
 
 	@Test(priority = 4)
 	public void verifyCategoryNameUniqueness() throws InterruptedException {
-	//	deleteCode();
+		//deleteCode();
 		Thread.sleep(2000);
 		String existTitle = category.firstCategoryName();
 		category.addCategoryBtnClick();
 		category.setCategoryInput(existTitle);
 		category.setDescInput("test");
 		category.selectTaxClick();
+		Thread.sleep(1000);
 		category.taxSelect("DefaultTax");
 		category.addBtnClick();
 		Thread.sleep(1000);
@@ -209,6 +211,7 @@ public class testCases_CategoryPage extends baseClass {
 
 	@Test(priority = 8)
 	public void validateCategoryDataOnEdit() throws InterruptedException {
+		//deleteCode();
 		String catName = DataGenerator.generateRandomCategoryName("Cat");
 		String catDesc = "Test description for edit validation";
 		category.addCategoryBtnClick();

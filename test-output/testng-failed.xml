@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.testCases_CategoryPage">
+      <class name="testCases.testCases_ProductAttributesPage">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="addCategoryAndToggleOnlineRegisterCheckboxes"/>
+          <include name="logTestName"/>
+          <include name="productAttributesPageLoadsWithBusinessRules"/>
         </methods>
-      </class> <!-- testCases.testCases_CategoryPage -->
+      </class> <!-- testCases.testCases_ProductAttributesPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

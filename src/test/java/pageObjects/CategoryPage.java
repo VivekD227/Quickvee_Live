@@ -258,9 +258,10 @@ public class CategoryPage extends basePage {
 		driver.findElement(descInput).sendKeys(desc);
 	}
 
-	public void selectTaxClick() {
+	public void selectTaxClick() throws InterruptedException {
 		visiblityOfElement(selectTax);
 		driver.findElement(selectTax).click();
+		Thread.sleep(1000);
 	}
 
 	public String selectTaxText() {
@@ -275,7 +276,7 @@ public class CategoryPage extends basePage {
 		actions.sendKeys(org.openqa.selenium.Keys.ESCAPE).perform();
 	}
 
-	public void selectMultipleTaxes(String... taxNames) {
+	public void selectMultipleTaxes(String... taxNames) throws InterruptedException {
 		for (String taxName : taxNames) {
 			selectTaxClick();
 			taxSelect(taxName);
