@@ -36,4 +36,8 @@ public class DataGenerator {
         return generateRandomBrandName(prefix);
     }
 
+    public static String generateRandomProductName(String prefix) {
+        return generateRandomBrandName(prefix);
+    }
+
 }

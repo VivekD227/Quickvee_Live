@@ -34,6 +34,8 @@ public class DashBoard extends basePage {
 
 	By attributes = By.xpath("//a[normalize-space()='Product Attributes']");
 
+	By products = By.xpath("//a[normalize-space()='Products']");
+
 	public boolean dashboard_titleDisplay() {
 		visiblityOfElement(dashboard_title);
 		return driver.findElement(dashboard_title).isDisplayed();
@@ -118,6 +120,17 @@ public class DashBoard extends basePage {
 	public String attributesMenuText() {
 		visiblityOfElement(attributes);
 		return driver.findElement(attributes).getText();
+	}
+
+	public void productsClick() {
+		elementClick(products);
+		org.openqa.selenium.JavascriptExecutor js = (org.openqa.selenium.JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", driver.findElement(products));
+	}
+
+	public String productsMenuText() {
+		visiblityOfElement(products);
+		return driver.findElement(products).getText();
 	}
 
 	public void logoutClick() {

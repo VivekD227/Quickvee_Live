@@ -1,0 +1,3 @@
+{"sessionId":"6f24ea","timestamp":1774171687971,"location":"ProductsPage.searchCategory","message":"candidate_panel_count","data":{"n":0},"hypothesisId":"B"}
+{"sessionId":"6f24ea","timestamp":1774171687973,"location":"ProductsPage.searchCategory","message":"candidate_scope_count","data":{"n":1},"hypothesisId":"B"}
+{"sessionId":"6f24ea","timestamp":1774171688211,"location":"ProductsPage.searchCategory","message":"searchCategory_done","data":{"n":1},"hypothesisId":"A"}

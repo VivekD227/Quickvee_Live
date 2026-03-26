@@ -16,6 +16,7 @@ import pageObjects.BrandPage;
 import pageObjects.CategoryPage;
 import pageObjects.TagPage;
 import pageObjects.ProductAttributesPage;
+import pageObjects.ProductsPage;
 import pageObjects.CustomerLogin;
 import pageObjects.DashBoard;
 import pageObjects.ForgotPassword;
@@ -36,6 +37,7 @@ public class baseClass {
 	public BrandPage brand;
 	public TagPage tag;
 	public ProductAttributesPage productAttributes;
+	public ProductsPage products;
 	public Logger logger;
 	public DataGenerator data;
 	
@@ -66,6 +68,7 @@ public class baseClass {
 		brand = new BrandPage(driver);
 		tag = new TagPage(driver);
 		productAttributes = new ProductAttributesPage(driver);
+		products = new ProductsPage(driver);
 		data = new DataGenerator();
 	}
 	
