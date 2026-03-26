@@ -15,13 +15,6 @@
 			<version>4.31.0</version>
 		</dependency>
 
-		<!-- Chrome DevTools -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-devtools-v85</artifactId>
-			<version>4.31.0</version>
-		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
 		<dependency>
 			<groupId>org.testng</groupId>
