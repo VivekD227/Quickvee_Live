@@ -2363,3 +2363,27 @@
 00:37:39.825 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:376)oggger - -----------------------
 00:37:40.079 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:379)oggger - Entered email: vivek.dubey521@gmail.com
 00:37:43.079 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:382)oggger - User click on submit button
+21:08:22.996 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:72)oggger - 
+21:08:23.001 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:73)oggger - Validate merchant login API (browser network) status after UI login
+21:08:23.001 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:74)oggger - -----------------------
+21:08:23.034 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:415)oggger - 
+21:08:23.035 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:416)oggger - Navigate to forgot password page
+21:08:23.035 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:417)oggger - -----------------------
+21:08:23.492 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:420)oggger - User click on forgot password button
+21:08:26.586 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:429)oggger - 
+21:08:26.586 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:430)oggger - Submit valid email on forgot password page
+21:08:26.586 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:431)oggger - -----------------------
+21:08:26.803 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:434)oggger - Entered email: vivek.dubey521@gmail.com
+21:08:27.158 [main] INFO  testCases.testCases_MerchantLogin.navigateToForgotPasswordPage(testCases_MerchantLogin.java:437)oggger - User click on submit button
+21:10:02.393 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:72)oggger - 
+21:10:02.395 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:73)oggger - Validate merchant login API (browser network) status after UI login
+21:10:02.396 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:74)oggger - -----------------------
+21:13:13.057 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:77)oggger - 
+21:13:13.069 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:78)oggger - Validate merchant login API (browser network) status after UI login
+21:13:13.069 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:79)oggger - -----------------------
+21:13:25.253 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:115)oggger - User clicked Login; waiting for network response containing: create_session_pk
+21:17:17.867 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:77)oggger - 
+21:17:17.869 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:78)oggger - Validate merchant login API (browser network) status after UI login
+21:17:17.869 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:79)oggger - -----------------------
+21:17:18.851 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:116)oggger - User clicked Login; waiting for network response matching any of: create_session_pk,LoginApiReact,create_session
+21:17:22.650 [main] INFO  testCases.testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus(testCases_MerchantLogin.java:128)oggger - Login API HTTP status 200 and dashboard visible; user URL: https://quickvee.com/merchants/dashboard

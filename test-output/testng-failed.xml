@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.testCases_ProductsPage">
+      <class name="testCases.testCases_MerchantLogin">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="logTestName"/>
-          <include name="addProductFormTitleTooltip"/>
+          <include name="loginValidCredential_validatesLoginApiHttpStatus"/>
         </methods>
-      </class> <!-- testCases.testCases_ProductsPage -->
+      </class> <!-- testCases.testCases_MerchantLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
