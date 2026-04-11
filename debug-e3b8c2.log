@@ -1,0 +1,3 @@
+{"data":{"browserVersion":"147.0.7727.50","browserName":"chrome","platformName":"windows"},"hypothesisId":"H1","location":"testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus","sessionId":"e3b8c2","message":"capabilities before network capture","timestamp":1775189837875}
+{"data":{"urlFragments":["create_session_pk","LoginApiReact","create_session"],"drainedEntries":180},"hypothesisId":"H3","location":"CdpNetworkLoginSupport.startWatching","sessionId":"e3b8c2","message":"after drain","timestamp":1775189837894}
+{"data":{"pollCount":12,"httpStatus":200,"trackedRequestIdsSize":2,"runId":"post-fix-v2"},"hypothesisId":"H_vf","location":"WatchHandle.waitForMatchingResponse","sessionId":"e3b8c2","message":"matched response","timestamp":1775189840128}
