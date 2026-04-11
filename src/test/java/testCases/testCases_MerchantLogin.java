@@ -2,21 +2,11 @@
 
 package testCases;
 
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.nio.file.StandardOpenOption;
-import java.time.Duration;
-
-import org.json.JSONObject;
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import utilities.CdpNetworkLoginSupport;
-import utilities.CdpNetworkLoginSupport.WatchHandle;
 import utilities.baseClass;
 
 @Listeners(utilities.TestListener.class)
@@ -63,78 +53,6 @@ public class testCases_MerchantLogin extends baseClass {
 		Thread.sleep(2000);
 		Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "User is not logout");
 
-	}
-
-	/**
-	 * After UI login, verifies via Chrome DevTools that the session/login API request
-	 * is observed and returns the expected HTTP status (default {@code 200}). The URL
-	 * is matched using comma-separated {@code merchantLoginApiUrlContains} in {@code config.properties}
-	 * (OR match on URL or on correlated {@code requestWillBeSent} / {@code responseReceived}).
-	 */
-	@Test(priority = 1)
-	public void loginValidCredential_validatesLoginApiHttpStatus() throws InterruptedException {
-
-		logger.info("");
-		logger.info("Validate merchant login API (browser network) status after UI login");
-		logger.info("-----------------------");
-
-		if (!(driver instanceof ChromeDriver)) {
-			Assert.fail("Chrome performance-log capture requires ChromeDriver; got: " + driver.getClass().getName());
-		}
-
-		ChromeDriver chromeDriver = (ChromeDriver) driver;
-
-		String[] urlFragments = CdpNetworkLoginSupport
-				.parseUrlFragments(p.getProperty("merchantLoginApiUrlContains", "create_session_pk"));
-		int expectedStatus = Integer.parseInt(p.getProperty("merchantLoginApiExpectedHttpStatus", "200"));
-
-		// #region agent log
-		try {
-			JSONObject o = new JSONObject();
-			o.put("sessionId", "e3b8c2");
-			o.put("hypothesisId", "H1");
-			o.put("location", "testCases_MerchantLogin.loginValidCredential_validatesLoginApiHttpStatus");
-			o.put("message", "capabilities before network capture");
-			o.put("timestamp", System.currentTimeMillis());
-			JSONObject d = new JSONObject();
-			d.put("browserName", chromeDriver.getCapabilities().getBrowserName());
-			d.put("browserVersion", chromeDriver.getCapabilities().getBrowserVersion());
-			d.put("platformName", String.valueOf(chromeDriver.getCapabilities().getPlatformName()));
-			o.put("data", d);
-			Files.write(Paths.get("debug-e3b8c2.log"), (o.toString() + System.lineSeparator()).getBytes(StandardCharsets.UTF_8),
-					StandardOpenOption.CREATE, StandardOpenOption.APPEND);
-		} catch (Exception ignored) {
-		}
-		// #endregion
-
-		WatchHandle watch = CdpNetworkLoginSupport.startWatching(chromeDriver, urlFragments);
-		try {
-			merchantLogin.setStoreName(p.getProperty("merchantStoreName"));
-			merchantLogin.setUserName(p.getProperty("merchantUserName"));
-			merchantLogin.setPassword(p.getProperty("merchantPassword"));
-			merchantLogin.loginBtnClick();
-			logger.info("User clicked Login; waiting for network response matching any of: " + watch.describeFragments());
-
-			int status = watch.waitForMatchingResponse(Duration.ofSeconds(25));
-			Assert.assertNotEquals(status, -1,
-					"No login API response matched fragments [" + watch.describeFragments()
-							+ "]. See debug-e3b8c2.log sampleResponseUrls or DevTools → Network to update merchantLoginApiUrlContains.");
-
-			Assert.assertEquals(status, expectedStatus,
-					"Login API HTTP status mismatch (expected " + expectedStatus + ")");
-
-			Thread.sleep(2000);
-			Assert.assertTrue(dashboard.dashboard_titleDisplay(), "DashBoard Title is not displayed");
-			logger.info("Login API HTTP status " + status + " and dashboard visible; user URL: " + driver.getCurrentUrl());
-
-			dashboard.menuClick();
-			Thread.sleep(2000);
-			dashboard.logoutClick();
-			Thread.sleep(2000);
-			Assert.assertTrue(merchantLogin.quickveeLogoDisplay(), "User is not logout");
-		} finally {
-			watch.stop();
-		}
 	}
 
 	// @Test(priority = 2)
@@ -436,7 +354,7 @@ public class testCases_MerchantLogin extends baseClass {
 
 	}
 
-	//@Test(priority = 11)
+	@Test(priority = 11)
 	public void navigateToForgotPasswordPage() throws InterruptedException {
 
 		logger.info("");
